@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Image Processing Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+    Medical Image Processing & Visualization Tool
+    </div>
+
+    <div class="container">
+
+        <p class="note">
+        Research & visualization support only — not for diagnosis.
+        </p>
+
+        <div class="controls">
+        
+            <div class="controlBox">
+            <label>Select Medical Image</label>
+            <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+            </div>
+
+            <div class="controlBox">
+            <label>Processing Operation</label>
+            <select id="operation" onchange="toggleControls()"></select>
+            </div>
+
+            <div id="blurControls" class="controlBox">
+            Blurness <!--Kernel Size-->
+            <input type="range" id="kernel" min="3" max="21" step="2" value="5">
+            <span id="kernelVal">5</span>
+            </div>
+
+            <div id="cannyControls" class="controlBox">
+            Low
+            <input type="range" id="low" min="10" max="150" value="50">
+            <span id="lowVal">50</span><br>
+            
+            High
+            <input type="range" id="high" min="50" max="300" value="150">
+            <span id="highVal">150</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="processImage()">Apply Processing</button>
+            <button onclick="resetImages()">Reset</button>
+            <button id="downloadBtn" onclick="downloadImage()" disabled>Download Result</button>
+        </div>
+
+        <div class="viewer">
+            
+            <div class="viewerCard">
+            <h3>Original Image</h3>
+            <img id="original">
+            </div>
+
+            <div class="viewerCard processedCard">
+
+                <div class="cardHeader">
+                    <h3>Processed Image</h3>
+                    <button class="viewerBtn"
+                            onclick="openViewer()"
+                            id="viewerBtn"
+                            disabled>
+                        🔍 View
+                    </button>
+                </div>
+
+                <img id="processed">
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    
+
+    <!-- Image Viewer Modal -->
+    <div id="viewerModal" class="modal">
+        <div class="modalContent">
+
+            <div class="modalToolbar">
+                <div style="color:white;">
+                    Image Inspection Viewer
+                </div>
+
+                <div>
+                    <span id="zoomLevel" style="margin-left:15px;">Zoom: 100%</span>
+                    <button onclick="toggleFullscreen()">Fullscreen</button>
+                    <button onclick="resetZoom()">Reset</button>
+                    <button onclick="closeViewer()">Close</button>
+                </div>
+            </div>
+
+            <div id="viewerCanvasWrap">
+                <div id="scrollContainer">
+                    <img id="viewerImage">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
