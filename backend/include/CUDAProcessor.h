@@ -19,4 +19,7 @@ public:
         const std::string& imageData,
         int low,
         int high) override;
+
+    std::vector<unsigned char> applyGrayscale(
+    const std::string& imageData) override;
 };
