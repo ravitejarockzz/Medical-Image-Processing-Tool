@@ -9,16 +9,39 @@ let processedReady = false;
 // Load operations
 // ----------------------
 
-fetch(API + "/operations")
-.then(r => r.json())
-.then(data => {
+fetch("/operations")
+  .then(res => res.json())
+  .then(data => {
+
+    // --------------------
+    // Populate operations
+    // --------------------
+    const opSelect = document.getElementById("operation");
     data.available_operations.forEach(op => {
-        const o = document.createElement("option");
-        o.value = op;
-        o.text = op.replace("_"," ");
-        operation.appendChild(o);
+        const option = document.createElement("option");
+        option.value = op;
+        option.text = op;
+        opSelect.appendChild(option);
     });
-    toggleControls();
+
+    // --------------------
+    // Populate processor mode
+    // --------------------
+    const modeSelect = document.getElementById("processorMode");
+
+    // Always add CPU
+    const cpuOption = document.createElement("option");
+    cpuOption.value = "cpu";
+    cpuOption.text = "CPU";
+    modeSelect.appendChild(cpuOption);
+
+    // Add CUDA only if available
+    if (data.gpu_available) {
+        const gpuOption = document.createElement("option");
+        gpuOption.value = "cuda";
+        gpuOption.text = "GPU";
+        modeSelect.appendChild(gpuOption);
+    }
 });
 
 

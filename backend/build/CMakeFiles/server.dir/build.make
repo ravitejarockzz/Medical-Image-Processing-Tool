@@ -124,6 +124,7 @@ CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/main.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/CPUProcessor.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/CUDAProcessor.cu.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/build.make
+CMakeFiles/server.dir/cmake_device_link.o: /usr/local/cuda/lib64/libcudart.so
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -159,7 +160,6 @@ CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_v
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-CMakeFiles/server.dir/cmake_device_link.o: /usr/local/cuda/lib64/libcudart.so
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
@@ -200,6 +200,7 @@ server: CMakeFiles/server.dir/src/main.cpp.o
 server: CMakeFiles/server.dir/src/CPUProcessor.cpp.o
 server: CMakeFiles/server.dir/src/CUDAProcessor.cu.o
 server: CMakeFiles/server.dir/build.make
+server: /usr/local/cuda/lib64/libcudart.so
 server: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -235,7 +236,6 @@ server: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-server: /usr/local/cuda/lib64/libcudart.so
 server: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d

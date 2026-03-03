@@ -3,13 +3,13 @@
 
 # compile CUDA with /usr/local/cuda/bin/nvcc
 # compile CXX with /usr/bin/c++
-CUDA_DEFINES = 
+CUDA_DEFINES = -DUSE_CUDA
 
 CUDA_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project2/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project2/backend/../Crow/include" -isystem=/usr/include/opencv4 -isystem=/usr/local/cuda/include
 
 CUDA_FLAGS =  --generate-code=arch=compute_89,code=[compute_89,sm_89] -Xcompiler=-fPIE -std=c++17
 
-CXX_DEFINES = 
+CXX_DEFINES = -DUSE_CUDA
 
 CXX_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project2/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project2/backend/../Crow/include" -isystem /usr/include/opencv4 -isystem /usr/local/cuda/include
 

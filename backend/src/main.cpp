@@ -1,8 +1,9 @@
 #include "crow.h"
 #include "ImageProcessor.h"
 #include "CPUProcessor.h"
+#ifdef USE_CUDA
 #include "CUDAProcessor.h"
-
+#endif
 #include <fstream>
 #include <sstream>
 
@@ -44,9 +45,17 @@ int main()
     CROW_ROUTE(app, "/operations")
     ([]() {
         crow::json::wvalue x;
+
         x["available_operations"][0] = "gaussian_blur";
         x["available_operations"][1] = "canny";
         x["available_operations"][2] = "grayscale";
+
+    #ifdef USE_CUDA
+        x["gpu_available"] = true;
+    #else
+        x["gpu_available"] = false;
+    #endif
+
         return x;
     });
 
@@ -76,10 +85,14 @@ int main()
 
             std::unique_ptr<ImageProcessor> processor;
 
-            if (mode == "cuda")
-                processor = std::make_unique<CUDAProcessor>();
-            else
+            #ifdef USE_CUDA
+                if (mode == "cuda")
+                    processor = std::make_unique<CUDAProcessor>();
+                else
+                    processor = std::make_unique<CPUProcessor>();
+            #else
                 processor = std::make_unique<CPUProcessor>();
+            #endif
 
             std::vector<unsigned char> result;
 
