@@ -1,0 +1,3 @@
+/mnt/d/Sai Satish/Image Processing/project2/backend/build/CMakeFiles/server.dir
+/mnt/d/Sai Satish/Image Processing/project2/backend/build/CMakeFiles/edit_cache.dir
+/mnt/d/Sai Satish/Image Processing/project2/backend/build/CMakeFiles/rebuild_cache.dir
