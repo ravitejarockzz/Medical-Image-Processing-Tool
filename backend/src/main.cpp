@@ -46,6 +46,7 @@ int main()
         crow::json::wvalue x;
         x["available_operations"][0] = "gaussian_blur";
         x["available_operations"][1] = "canny";
+        x["available_operations"][2] = "grayscale";
         return x;
     });
 
@@ -92,6 +93,10 @@ int main()
                 int low  = configJson["parameters"]["low"].i();
                 int high = configJson["parameters"]["high"].i();
                 result = processor->applyCanny(imageData, low, high);
+            }
+            else if (operation == "grayscale")
+            {
+                result = processor->applyGrayscale(imageData);
             }
             else
             {

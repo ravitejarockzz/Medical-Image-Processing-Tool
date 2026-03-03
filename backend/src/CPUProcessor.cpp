@@ -60,3 +60,17 @@ std::vector<unsigned char> CPUProcessor::applyCanny(
 
     return encodePNG(edges);
 }
+
+// -------------------------------------
+// Grayscale Conversion
+// -------------------------------------
+std::vector<unsigned char> CPUProcessor::applyGrayscale(
+    const std::string& imageData)
+{
+    cv::Mat img = decodeImage(imageData);
+
+    cv::Mat gray;
+    cv::cvtColor(img, gray, cv::COLOR_BGR2GRAY);
+
+    return encodePNG(gray);
+}

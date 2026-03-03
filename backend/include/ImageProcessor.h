@@ -22,4 +22,7 @@ public:
         int low,
         int high) = 0;
 
+    // Apply Grayscale Conversion
+    virtual std::vector<unsigned char> applyGrayscale(
+    const std::string& imageData) = 0;
 };

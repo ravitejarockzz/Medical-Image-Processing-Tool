@@ -127,3 +127,13 @@ std::vector<unsigned char> CUDAProcessor::applyCanny(
     CPUProcessor cpu;
     return cpu.applyCanny(imageData, low, high);
 }
+
+// -------------------------------------
+// Grayscale Conversion (Fallback to CPU)   
+// -------------------------------------
+std::vector<unsigned char> CUDAProcessor::applyGrayscale(
+    const std::string& imageData)
+{
+    CPUProcessor cpu;
+    return cpu.applyGrayscale(imageData);
+}
