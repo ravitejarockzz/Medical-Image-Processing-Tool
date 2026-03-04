@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/Sai Satish/Image Processing/project2/backend"
+CMAKE_SOURCE_DIR = "/mnt/d/Sai Satish/Image Processing/project3/backend"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/Sai Satish/Image Processing/project2/backend/build"
+CMAKE_BINARY_DIR = "/mnt/d/Sai Satish/Image Processing/project3/backend/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project2/backend/build/CMakeFiles" "/mnt/d/Sai Satish/Image Processing/project2/backend/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" "/mnt/d/Sai Satish/Image Processing/project3/backend/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project2/backend/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/VerifyGlobs.cmake"
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,53 +130,221 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-src/CPUProcessor.o: src/CPUProcessor.cpp.o
-.PHONY : src/CPUProcessor.o
+src/cpu/Canny.o: src/cpu/Canny.cpp.o
+.PHONY : src/cpu/Canny.o
 
 # target to build an object file
-src/CPUProcessor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CPUProcessor.cpp.o
-.PHONY : src/CPUProcessor.cpp.o
+src/cpu/Canny.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Canny.cpp.o
+.PHONY : src/cpu/Canny.cpp.o
 
-src/CPUProcessor.i: src/CPUProcessor.cpp.i
-.PHONY : src/CPUProcessor.i
+src/cpu/Canny.i: src/cpu/Canny.cpp.i
+.PHONY : src/cpu/Canny.i
 
 # target to preprocess a source file
-src/CPUProcessor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CPUProcessor.cpp.i
-.PHONY : src/CPUProcessor.cpp.i
+src/cpu/Canny.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Canny.cpp.i
+.PHONY : src/cpu/Canny.cpp.i
 
-src/CPUProcessor.s: src/CPUProcessor.cpp.s
-.PHONY : src/CPUProcessor.s
+src/cpu/Canny.s: src/cpu/Canny.cpp.s
+.PHONY : src/cpu/Canny.s
 
 # target to generate assembly for a file
-src/CPUProcessor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CPUProcessor.cpp.s
-.PHONY : src/CPUProcessor.cpp.s
+src/cpu/Canny.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Canny.cpp.s
+.PHONY : src/cpu/Canny.cpp.s
 
-src/CUDAProcessor.o: src/CUDAProcessor.cu.o
-.PHONY : src/CUDAProcessor.o
+src/cpu/GaussianBlur.o: src/cpu/GaussianBlur.cpp.o
+.PHONY : src/cpu/GaussianBlur.o
 
 # target to build an object file
-src/CUDAProcessor.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CUDAProcessor.cu.o
-.PHONY : src/CUDAProcessor.cu.o
+src/cpu/GaussianBlur.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.o
+.PHONY : src/cpu/GaussianBlur.cpp.o
 
-src/CUDAProcessor.i: src/CUDAProcessor.cu.i
-.PHONY : src/CUDAProcessor.i
+src/cpu/GaussianBlur.i: src/cpu/GaussianBlur.cpp.i
+.PHONY : src/cpu/GaussianBlur.i
 
 # target to preprocess a source file
-src/CUDAProcessor.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CUDAProcessor.cu.i
-.PHONY : src/CUDAProcessor.cu.i
+src/cpu/GaussianBlur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.i
+.PHONY : src/cpu/GaussianBlur.cpp.i
 
-src/CUDAProcessor.s: src/CUDAProcessor.cu.s
-.PHONY : src/CUDAProcessor.s
+src/cpu/GaussianBlur.s: src/cpu/GaussianBlur.cpp.s
+.PHONY : src/cpu/GaussianBlur.s
 
 # target to generate assembly for a file
-src/CUDAProcessor.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CUDAProcessor.cu.s
-.PHONY : src/CUDAProcessor.cu.s
+src/cpu/GaussianBlur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.s
+.PHONY : src/cpu/GaussianBlur.cpp.s
+
+src/cpu/GrayScale.o: src/cpu/GrayScale.cpp.o
+.PHONY : src/cpu/GrayScale.o
+
+# target to build an object file
+src/cpu/GrayScale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GrayScale.cpp.o
+.PHONY : src/cpu/GrayScale.cpp.o
+
+src/cpu/GrayScale.i: src/cpu/GrayScale.cpp.i
+.PHONY : src/cpu/GrayScale.i
+
+# target to preprocess a source file
+src/cpu/GrayScale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GrayScale.cpp.i
+.PHONY : src/cpu/GrayScale.cpp.i
+
+src/cpu/GrayScale.s: src/cpu/GrayScale.cpp.s
+.PHONY : src/cpu/GrayScale.s
+
+# target to generate assembly for a file
+src/cpu/GrayScale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/GrayScale.cpp.s
+.PHONY : src/cpu/GrayScale.cpp.s
+
+src/cpu/HarrisCorner.o: src/cpu/HarrisCorner.cpp.o
+.PHONY : src/cpu/HarrisCorner.o
+
+# target to build an object file
+src/cpu/HarrisCorner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.o
+.PHONY : src/cpu/HarrisCorner.cpp.o
+
+src/cpu/HarrisCorner.i: src/cpu/HarrisCorner.cpp.i
+.PHONY : src/cpu/HarrisCorner.i
+
+# target to preprocess a source file
+src/cpu/HarrisCorner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.i
+.PHONY : src/cpu/HarrisCorner.cpp.i
+
+src/cpu/HarrisCorner.s: src/cpu/HarrisCorner.cpp.s
+.PHONY : src/cpu/HarrisCorner.s
+
+# target to generate assembly for a file
+src/cpu/HarrisCorner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.s
+.PHONY : src/cpu/HarrisCorner.cpp.s
+
+src/cuda/Canny.o: src/cuda/Canny.cu.o
+.PHONY : src/cuda/Canny.o
+
+# target to build an object file
+src/cuda/Canny.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.o
+.PHONY : src/cuda/Canny.cu.o
+
+src/cuda/Canny.i: src/cuda/Canny.cu.i
+.PHONY : src/cuda/Canny.i
+
+# target to preprocess a source file
+src/cuda/Canny.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.i
+.PHONY : src/cuda/Canny.cu.i
+
+src/cuda/Canny.s: src/cuda/Canny.cu.s
+.PHONY : src/cuda/Canny.s
+
+# target to generate assembly for a file
+src/cuda/Canny.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.s
+.PHONY : src/cuda/Canny.cu.s
+
+src/cuda/GaussianBlur.o: src/cuda/GaussianBlur.cu.o
+.PHONY : src/cuda/GaussianBlur.o
+
+# target to build an object file
+src/cuda/GaussianBlur.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o
+.PHONY : src/cuda/GaussianBlur.cu.o
+
+src/cuda/GaussianBlur.i: src/cuda/GaussianBlur.cu.i
+.PHONY : src/cuda/GaussianBlur.i
+
+# target to preprocess a source file
+src/cuda/GaussianBlur.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.i
+.PHONY : src/cuda/GaussianBlur.cu.i
+
+src/cuda/GaussianBlur.s: src/cuda/GaussianBlur.cu.s
+.PHONY : src/cuda/GaussianBlur.s
+
+# target to generate assembly for a file
+src/cuda/GaussianBlur.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.s
+.PHONY : src/cuda/GaussianBlur.cu.s
+
+src/cuda/GrayScale.o: src/cuda/GrayScale.cu.o
+.PHONY : src/cuda/GrayScale.o
+
+# target to build an object file
+src/cuda/GrayScale.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.o
+.PHONY : src/cuda/GrayScale.cu.o
+
+src/cuda/GrayScale.i: src/cuda/GrayScale.cu.i
+.PHONY : src/cuda/GrayScale.i
+
+# target to preprocess a source file
+src/cuda/GrayScale.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.i
+.PHONY : src/cuda/GrayScale.cu.i
+
+src/cuda/GrayScale.s: src/cuda/GrayScale.cu.s
+.PHONY : src/cuda/GrayScale.s
+
+# target to generate assembly for a file
+src/cuda/GrayScale.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.s
+.PHONY : src/cuda/GrayScale.cu.s
+
+src/cuda/HarrisCorner.o: src/cuda/HarrisCorner.cu.o
+.PHONY : src/cuda/HarrisCorner.o
+
+# target to build an object file
+src/cuda/HarrisCorner.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o
+.PHONY : src/cuda/HarrisCorner.cu.o
+
+src/cuda/HarrisCorner.i: src/cuda/HarrisCorner.cu.i
+.PHONY : src/cuda/HarrisCorner.i
+
+# target to preprocess a source file
+src/cuda/HarrisCorner.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.i
+.PHONY : src/cuda/HarrisCorner.cu.i
+
+src/cuda/HarrisCorner.s: src/cuda/HarrisCorner.cu.s
+.PHONY : src/cuda/HarrisCorner.s
+
+# target to generate assembly for a file
+src/cuda/HarrisCorner.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.s
+.PHONY : src/cuda/HarrisCorner.cu.s
+
+src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
+.PHONY : src/factory/FilterFactory.o
+
+# target to build an object file
+src/factory/FilterFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o
+.PHONY : src/factory/FilterFactory.cpp.o
+
+src/factory/FilterFactory.i: src/factory/FilterFactory.cpp.i
+.PHONY : src/factory/FilterFactory.i
+
+# target to preprocess a source file
+src/factory/FilterFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/factory/FilterFactory.cpp.i
+.PHONY : src/factory/FilterFactory.cpp.i
+
+src/factory/FilterFactory.s: src/factory/FilterFactory.cpp.s
+.PHONY : src/factory/FilterFactory.s
+
+# target to generate assembly for a file
+src/factory/FilterFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/factory/FilterFactory.cpp.s
+.PHONY : src/factory/FilterFactory.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -201,6 +370,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/processor/CPUProcessor.o: src/processor/CPUProcessor.cpp.o
+.PHONY : src/processor/CPUProcessor.o
+
+# target to build an object file
+src/processor/CPUProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o
+.PHONY : src/processor/CPUProcessor.cpp.o
+
+src/processor/CPUProcessor.i: src/processor/CPUProcessor.cpp.i
+.PHONY : src/processor/CPUProcessor.i
+
+# target to preprocess a source file
+src/processor/CPUProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.i
+.PHONY : src/processor/CPUProcessor.cpp.i
+
+src/processor/CPUProcessor.s: src/processor/CPUProcessor.cpp.s
+.PHONY : src/processor/CPUProcessor.s
+
+# target to generate assembly for a file
+src/processor/CPUProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.s
+.PHONY : src/processor/CPUProcessor.cpp.s
+
+src/processor/CUDAProcessor.o: src/processor/CUDAProcessor.cu.o
+.PHONY : src/processor/CUDAProcessor.o
+
+# target to build an object file
+src/processor/CUDAProcessor.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o
+.PHONY : src/processor/CUDAProcessor.cu.o
+
+src/processor/CUDAProcessor.i: src/processor/CUDAProcessor.cu.i
+.PHONY : src/processor/CUDAProcessor.i
+
+# target to preprocess a source file
+src/processor/CUDAProcessor.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.i
+.PHONY : src/processor/CUDAProcessor.cu.i
+
+src/processor/CUDAProcessor.s: src/processor/CUDAProcessor.cu.s
+.PHONY : src/processor/CUDAProcessor.s
+
+# target to generate assembly for a file
+src/processor/CUDAProcessor.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.s
+.PHONY : src/processor/CUDAProcessor.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,15 +427,42 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
-	@echo "... src/CPUProcessor.o"
-	@echo "... src/CPUProcessor.i"
-	@echo "... src/CPUProcessor.s"
-	@echo "... src/CUDAProcessor.o"
-	@echo "... src/CUDAProcessor.i"
-	@echo "... src/CUDAProcessor.s"
+	@echo "... src/cpu/Canny.o"
+	@echo "... src/cpu/Canny.i"
+	@echo "... src/cpu/Canny.s"
+	@echo "... src/cpu/GaussianBlur.o"
+	@echo "... src/cpu/GaussianBlur.i"
+	@echo "... src/cpu/GaussianBlur.s"
+	@echo "... src/cpu/GrayScale.o"
+	@echo "... src/cpu/GrayScale.i"
+	@echo "... src/cpu/GrayScale.s"
+	@echo "... src/cpu/HarrisCorner.o"
+	@echo "... src/cpu/HarrisCorner.i"
+	@echo "... src/cpu/HarrisCorner.s"
+	@echo "... src/cuda/Canny.o"
+	@echo "... src/cuda/Canny.i"
+	@echo "... src/cuda/Canny.s"
+	@echo "... src/cuda/GaussianBlur.o"
+	@echo "... src/cuda/GaussianBlur.i"
+	@echo "... src/cuda/GaussianBlur.s"
+	@echo "... src/cuda/GrayScale.o"
+	@echo "... src/cuda/GrayScale.i"
+	@echo "... src/cuda/GrayScale.s"
+	@echo "... src/cuda/HarrisCorner.o"
+	@echo "... src/cuda/HarrisCorner.i"
+	@echo "... src/cuda/HarrisCorner.s"
+	@echo "... src/factory/FilterFactory.o"
+	@echo "... src/factory/FilterFactory.i"
+	@echo "... src/factory/FilterFactory.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/processor/CPUProcessor.o"
+	@echo "... src/processor/CPUProcessor.i"
+	@echo "... src/processor/CPUProcessor.s"
+	@echo "... src/processor/CUDAProcessor.o"
+	@echo "... src/processor/CUDAProcessor.i"
+	@echo "... src/processor/CUDAProcessor.s"
 .PHONY : help
 
 
@@ -230,6 +474,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/VerifyGlobs.cmake"
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

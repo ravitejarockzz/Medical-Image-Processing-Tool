@@ -1,4 +1,4 @@
-CMakeFiles/server.dir/src/CUDAProcessor.cu.o : /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/src/CUDAProcessor.cu \
+CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o : /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/cuda/HarrisCorner.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \
@@ -180,37 +180,83 @@ CMakeFiles/server.dir/src/CUDAProcessor.cu.o : /mnt/d/Sai\ Satish/Image\ Process
     /usr/include/c++/11/utility \
     /usr/include/c++/11/bits/stl_relops.h \
     /usr/include/c++/11/initializer_list \
-    /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/CUDAProcessor.h \
-    /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/ImageProcessor.h \
+    /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/cuda/HarrisCorner.h \
+    /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h \
+    /usr/include/opencv4/opencv2/opencv.hpp \
+    /usr/include/opencv4/opencv2/opencv_modules.hpp \
+    /usr/include/opencv4/opencv2/core.hpp \
+    /usr/include/opencv4/opencv2/core/cvdef.h \
+    /usr/include/opencv4/opencv2/core/version.hpp \
+    /usr/include/opencv4/opencv2/core/hal/interface.h \
+    /usr/include/c++/11/cstddef \
+    /usr/include/c++/11/cstdint \
+    /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+    /usr/include/stdint.h \
+    /usr/include/x86_64-linux-gnu/bits/wchar.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+    /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+    /usr/include/c++/11/array \
+    /usr/include/c++/11/bits/range_access.h \
+    /usr/include/opencv4/opencv2/core/base.hpp \
+    /usr/include/c++/11/climits \
+    /usr/include/c++/11/algorithm \
+    /usr/include/c++/11/bits/stl_algo.h \
+    /usr/include/c++/11/bits/algorithmfwd.h \
+    /usr/include/c++/11/bits/stl_heap.h \
+    /usr/include/c++/11/bits/stl_tempbuf.h \
+    /usr/include/c++/11/bits/stl_construct.h \
+    /usr/include/c++/11/bits/uniform_int_dist.h \
+    /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+    /usr/include/c++/11/functional \
+    /usr/include/c++/11/bits/stl_function.h \
+    /usr/include/c++/11/backward/binders.h \
+    /usr/include/c++/11/tuple \
+    /usr/include/c++/11/bits/uses_allocator.h \
+    /usr/include/c++/11/bits/invoke.h \
+    /usr/include/c++/11/bits/functional_hash.h \
+    /usr/include/c++/11/bits/hash_bytes.h \
+    /usr/include/c++/11/bits/refwrap.h \
+    /usr/include/c++/11/bits/std_function.h \
+    /usr/include/c++/11/typeinfo \
+    /usr/include/c++/11/unordered_map \
+    /usr/include/c++/11/bits/allocator.h \
+    /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+    /usr/include/c++/11/ext/new_allocator.h \
+    /usr/include/c++/11/bits/memoryfwd.h \
+    /usr/include/c++/11/ext/alloc_traits.h \
+    /usr/include/c++/11/bits/alloc_traits.h \
+    /usr/include/c++/11/ext/aligned_buffer.h \
+    /usr/include/c++/11/bits/hashtable.h \
+    /usr/include/c++/11/bits/hashtable_policy.h \
+    /usr/include/c++/11/bits/enable_special_members.h \
+    /usr/include/c++/11/bits/node_handle.h \
+    /usr/include/c++/11/bits/unordered_map.h \
+    /usr/include/c++/11/bits/erase_if.h \
+    /usr/include/c++/11/vector \
+    /usr/include/c++/11/bits/stl_uninitialized.h \
+    /usr/include/c++/11/bits/stl_vector.h \
+    /usr/include/c++/11/bits/stl_bvector.h \
+    /usr/include/c++/11/bits/vector.tcc \
+    /usr/include/c++/11/pstl/execution_defs.h \
+    /usr/include/opencv4/opencv2/core/cvstd.hpp \
+    /usr/include/c++/11/cstring \
+    /usr/include/c++/11/cctype \
     /usr/include/c++/11/string \
     /usr/include/c++/11/bits/stringfwd.h \
-    /usr/include/c++/11/bits/memoryfwd.h \
     /usr/include/c++/11/bits/char_traits.h \
     /usr/include/c++/11/bits/postypes.h \
     /usr/include/c++/11/cwchar \
     /usr/include/wchar.h \
-    /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-    /usr/include/c++/11/cstdint \
-    /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-    /usr/include/stdint.h \
-    /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-    /usr/include/c++/11/bits/allocator.h \
-    /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-    /usr/include/c++/11/ext/new_allocator.h \
     /usr/include/c++/11/bits/localefwd.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
     /usr/include/c++/11/clocale \
     /usr/include/locale.h \
     /usr/include/x86_64-linux-gnu/bits/locale.h \
     /usr/include/c++/11/iosfwd \
-    /usr/include/c++/11/cctype \
     /usr/include/c++/11/bits/ostream_insert.h \
     /usr/include/c++/11/bits/cxxabi_forced.h \
-    /usr/include/c++/11/bits/stl_function.h \
-    /usr/include/c++/11/backward/binders.h \
-    /usr/include/c++/11/bits/range_access.h \
     /usr/include/c++/11/bits/basic_string.h \
     /usr/include/c++/11/ext/atomicity.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
@@ -224,12 +270,7 @@ CMakeFiles/server.dir/src/CUDAProcessor.cu.o : /mnt/d/Sai\ Satish/Image\ Process
     /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
     /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-    /usr/include/c++/11/ext/alloc_traits.h \
-    /usr/include/c++/11/bits/alloc_traits.h \
-    /usr/include/c++/11/bits/stl_construct.h \
     /usr/include/c++/11/string_view \
-    /usr/include/c++/11/bits/functional_hash.h \
-    /usr/include/c++/11/bits/hash_bytes.h \
     /usr/include/c++/11/bits/string_view.tcc \
     /usr/include/c++/11/ext/string_conversions.h \
     /usr/include/c++/11/cstdio \
@@ -243,48 +284,6 @@ CMakeFiles/server.dir/src/CUDAProcessor.cu.o : /mnt/d/Sai\ Satish/Image\ Process
     /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
     /usr/include/c++/11/bits/charconv.h \
     /usr/include/c++/11/bits/basic_string.tcc \
-    /usr/include/c++/11/vector \
-    /usr/include/c++/11/bits/stl_uninitialized.h \
-    /usr/include/c++/11/bits/stl_vector.h \
-    /usr/include/c++/11/bits/stl_bvector.h \
-    /usr/include/c++/11/bits/vector.tcc \
-    /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/CPUProcessor.h \
-    /usr/include/opencv4/opencv2/opencv.hpp \
-    /usr/include/opencv4/opencv2/opencv_modules.hpp \
-    /usr/include/opencv4/opencv2/core.hpp \
-    /usr/include/opencv4/opencv2/core/cvdef.h \
-    /usr/include/opencv4/opencv2/core/version.hpp \
-    /usr/include/opencv4/opencv2/core/hal/interface.h \
-    /usr/include/c++/11/cstddef \
-    /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
-    /usr/include/c++/11/array \
-    /usr/include/opencv4/opencv2/core/base.hpp \
-    /usr/include/c++/11/climits \
-    /usr/include/c++/11/algorithm \
-    /usr/include/c++/11/bits/stl_algo.h \
-    /usr/include/c++/11/bits/algorithmfwd.h \
-    /usr/include/c++/11/bits/stl_heap.h \
-    /usr/include/c++/11/bits/stl_tempbuf.h \
-    /usr/include/c++/11/bits/uniform_int_dist.h \
-    /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-    /usr/include/c++/11/functional \
-    /usr/include/c++/11/tuple \
-    /usr/include/c++/11/bits/uses_allocator.h \
-    /usr/include/c++/11/bits/invoke.h \
-    /usr/include/c++/11/bits/refwrap.h \
-    /usr/include/c++/11/bits/std_function.h \
-    /usr/include/c++/11/typeinfo \
-    /usr/include/c++/11/unordered_map \
-    /usr/include/c++/11/ext/aligned_buffer.h \
-    /usr/include/c++/11/bits/hashtable.h \
-    /usr/include/c++/11/bits/hashtable_policy.h \
-    /usr/include/c++/11/bits/enable_special_members.h \
-    /usr/include/c++/11/bits/node_handle.h \
-    /usr/include/c++/11/bits/unordered_map.h \
-    /usr/include/c++/11/bits/erase_if.h \
-    /usr/include/c++/11/pstl/execution_defs.h \
-    /usr/include/opencv4/opencv2/core/cvstd.hpp \
-    /usr/include/c++/11/cstring \
     /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
     /usr/include/c++/11/memory \
     /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -453,4 +452,5 @@ CMakeFiles/server.dir/src/CUDAProcessor.cu.o : /mnt/d/Sai\ Satish/Image\ Process
     /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
     /usr/include/opencv4/opencv2/video.hpp \
     /usr/include/opencv4/opencv2/video/tracking.hpp \
-    /usr/include/opencv4/opencv2/video/background_segm.hpp
+    /usr/include/opencv4/opencv2/video/background_segm.hpp \
+    /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h

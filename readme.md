@@ -1,175 +1,321 @@
-# Image Processing Web App (C++ + CUDA + REST API)
+# **Image Processing Web App (C++ + OpenCV + Crow + CUDA)**
 
-A web-deployable image processing system built with:
+A modular, extensible medical image processing backend built with:
 
-- C++
-- OpenCV
-- CUDA (optional GPU acceleration)
-- Crow (C++ REST framework)
-- HTML + JavaScript frontend
-
-This project demonstrates a clean architecture where the processing engine is written in C++ and can run either on CPU or GPU (CUDA), while being accessible through a web interface.
-
----
-
-## 🚀 Features
-
-- Upload image from browser
-- Apply processing operations:
-  - Grayscale
-  - Gaussian Blur
-  - Edge Detection
-- Choose execution device:
-  - CPU
-  - GPU (CUDA)
-- Automatic fallback to CPU if GPU is unavailable
-- Clean backend abstraction (CPUProcessor / CUDAProcessor)
+- **C++17**
+- **OpenCV**
+- **Crow (C++ Web Framework)**
+- **Optional CUDA backend**
+- **Dynamic filter registration (Factory Pattern)**
+- **Frontend served directly from backend**
 
 ---
 
-## 🏗 Architecture
-```
-Frontend (HTML + JS)
-↓
-REST API (Crow)
-↓
-ImageProcessor Interface
-↓
-┌───────────────┐
-│ CPUProcessor  │
-│ CUDAProcessor │
-└───────────────┘
-```
+# **✨ Features**
 
-
-The frontend communicates with the backend via HTTP POST.
-The backend selects CPU or GPU processing dynamically.
+- Gaussian Blur (CPU / CUDA)
+- Canny Edge Detection (CPU / CUDA)
+- Grayscale Conversion (CPU / CUDA)
+- Dynamic filter auto-registration
+- Runtime CPU/GPU switching
+- Clean frontend UI with sliders
+- No hardcoded switch-case logic
+- Extensible plugin-style architecture
 
 ---
 
-## 📁 Project Structure
+# **🏗 Architecture Overview**
+
+This project follows a clean, extensible architecture.
+
+---
+
+## **1️⃣ IFilter Interface**
+
+All filters inherit from:
+
+```cpp
+class IFilter {
+public:
+    virtual cv::Mat apply(
+        const cv::Mat& input,
+        const std::unordered_map<std::string, double>& params
+    ) = 0;
+
+    virtual ~IFilter() = default;
+};
 ```
-Image Processing Tool
-├── backend
-│   ├── CMakeLists.txt
-│   ├── build
-│   │   ├── CMakeCache.txt
-│   │   ├── CMakeFiles
-│   │   ├── Makefile
-│   │   ├── cmake_install.cmake
-│   │   └── server
-│   ├── include
+
+---
+
+## **2️⃣ Self-Registering Filters**
+
+Filters register themselves using macros:
+
+```cpp
+REGISTER_CPU_FILTER(CannyCPU, "canny");
+REGISTER_CUDA_FILTER(CannyCUDA, "canny");
+```
+
+This uses **static auto-registration**, meaning:
+
+- Filters register before `main()` runs
+- No central modification required
+- Open/Closed Principle is respected
+
+---
+
+## **3️⃣ Factory Pattern**
+
+`FilterFactory` maintains maps:
+
+```cpp
+std::unordered_map<std::string, FilterCreator> cpuFilters;
+std::unordered_map<std::string, FilterCreator> cudaFilters;
+```
+
+The processor simply asks:
+
+```cpp
+factory.createCPU("canny");
+```
+
+No switch-case logic anywhere.
+
+---
+
+## **4️⃣ Processor Abstraction**
+
+- `CPUProcessor`
+- `CUDAProcessor`
+
+Both implement:
+
+```cpp
+process(input, operationName, parameters);
+```
+
+The frontend selects `"cpu"` or `"cuda"` at runtime.
+
+---
+
+# **📁 Project Structure**
+
+```
+backend/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+│
+├── include/
+│   ├── core/
+│   │   └── IFilter.h
+│   ├── factory/
+│   │   └── FilterFactory.h
+│   ├── processor/
+│   │   ├── ImageProcessor.h
 │   │   ├── CPUProcessor.h
-│   │   ├── CUDAProcessor.h
-│   │   └── ImageProcessor.h
-│   ├── src
-│   │   ├── CPUProcessor.cpp
-│   │   ├── CUDAProcessor.cu
-│   │   └── main.cpp
-│   └── static
-│       ├── app.js
-│       ├── index.html
-│       └── style.css
-└── readme.md
----
-
-## 🧠 How It Works
-
-1. User uploads an image in browser.
-2. Image is sent to backend via POST request.
-3. Backend decodes image using OpenCV.
-4. Based on `device` parameter:
-   - CPU → uses CPUProcessor
-   - GPU → uses CUDAProcessor (if available)
-5. Processed image is returned as PNG.
-6. Browser displays result.
+│   │   └── CUDAProcessor.h
+│   ├── cpu/
+│   └── cuda/
+│
+├── src/
+│   ├── cpu/
+│   ├── cuda/
+│   ├── processor/
+│   ├── factory/
+│   └── main.cpp
+│
+└── CMakeLists.txt
+```
 
 ---
 
-## ⚙️ Requirements
+# **🚀 How To Clone (With Crow Submodule)**
 
-### System Requirements
+This project uses **Crow** as a git submodule.
 
+### Clone with submodules:
+
+```bash
+git clone --recurse-submodules <your-repo-url>
+```
+
+If already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+---
+
+# **🔧 Requirements (Linux / WSL)**
 - C++17 compatible compiler
 - CMake (>= 3.10)
 - OpenCV (C++ version)
 - CUDA Toolkit (if using GPU)
 - NVIDIA GPU (for CUDA execution)
 
-### Libraries
+Install dependencies:
 
-- OpenCV
-- CUDA Toolkit
-- Crow (header-only)
+```bash
+sudo apt update
+sudo apt install build-essential cmake
+sudo apt install libopencv-dev
+```
 
----
+If using CUDA:
 
-## 🔧 Build Instructions
-
-### 1️⃣ Install Dependencies
-
-- Install OpenCV (C++ version)
 - Install CUDA Toolkit
-- Download Crow header
+- Ensure `nvcc` is available
 
 ---
 
-### 2️⃣ Build Project
+# **🛠 Build Instructions**
+
+From the `backend` directory:
 
 ```bash
 mkdir build
 cd build
 cmake ..
-make
+make -j $(nproc)
 ```
-### 3️⃣ Run Server
-```
+
+Run server:
+
+```bash
 ./server
+```
 
-Server runs on:
+Open in browser:
 
+```
 http://localhost:18080
 ```
 
-### main.cpp
-```
-Uses Crow C++ web framework.
+---
 
-Responsibilities: - Start HTTP server - Define API routes - Serve static files - Receive image uploads - Select CPU or CUDA processor - Return processed image
+# **⚙️ CUDA Support**
 
-Acts as the traffic controller between frontend and processing modules.
-```
+CMake option:
 
-## Extending the flow
-```
-When you add a new filter, it must exist in:
-
-🔹 Backend processing logic
-
-🔹 API operation list
-
-🔹 Frontend dropdown
-
-🔹 Processor interface
-
-Because your flow is:
-
-Frontend Dropdown
-      ↓
-/operations API
-      ↓
-processImage() → sends operation
-      ↓
-main.cpp → selects function
-      ↓
-CPUProcessor / CUDAProcessor
-      ↓
-Image returned
-
-So we must extend this pipeline properly.
+```cmake
+option(USE_CUDA "Enable CUDA backend" ON)
 ```
 
-### To Clone
+If CUDA toolkit is not found:
+
+- GPU mode is disabled automatically
+- CPU mode continues to work
+
+Graceful fallback is built-in.
+
+---
+
+# **➕ How To Add a New Filter**
+
+Example: Adding `grayscale`
+
+### 1️⃣ Create CPU file
+
+`src/cpu/GrayscaleCPU.cpp`
+
+```cpp
+class GrayscaleCPU : public IFilter {
+public:
+    cv::Mat apply(const cv::Mat& input,
+                  const std::unordered_map<std::string,double>&) override {
+        cv::Mat gray;
+        cv::cvtColor(input, gray, cv::COLOR_BGR2GRAY);
+        cv::Mat output;
+        cv::cvtColor(gray, output, cv::COLOR_GRAY2BGR);
+        return output;
+    }
+};
+
+REGISTER_CPU_FILTER(GrayscaleCPU, "grayscale");
 ```
-git clone --recurse-submodules <your_repo>
+
+### 2️⃣ Create CUDA file
+
+`src/cuda/GrayscaleCUDA.cu`
+
+```cpp
+REGISTER_CUDA_FILTER(GrayscaleCUDA, "grayscale");
 ```
+
+### 3️⃣ Rebuild
+
+```bash
+cmake ..
+make
+```
+
+No changes required in:
+
+- `main.cpp`
+- Processor classes
+- Factory logic
+
+---
+
+# **🌐 API Endpoints**
+
+## **GET /operations**
+
+Returns:
+
+```json
+{
+  "available_operations": ["gaussian_blur", "canny", "grayscale"],
+  "gpu_available": true
+}
+```
+
+---
+
+## **POST /process**
+
+Multipart form:
+
+- `file` → image
+- `config` → JSON string
+
+Returns processed PNG image.
+
+---
+
+# **🎯 Design Principles Used**
+
+- Factory Pattern
+- Static Auto-Registration
+- Open/Closed Principle
+- Separation of Concerns
+- Runtime Polymorphism
+- CPU/GPU Abstraction
+
+---
+
+# **📌 Notes**
+
+- Grayscale converts back to BGR for frontend compatibility.
+- CUDA filters currently fallback to CPU logic.
+- `GLOB_RECURSE` in CMake auto-detects new source files.
+
+---
+
+# **🔮 Future Improvements**
+
+- Real CUDA kernels
+- CPU vs GPU benchmarking
+- Plugin-based dynamic loading
+- Histogram equalization
+- DICOM support
+- Docker deployment
+- Authentication layer
+
+---
+

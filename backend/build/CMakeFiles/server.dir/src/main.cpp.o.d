@@ -1,8 +1,8 @@
 CMakeFiles/server.dir/src/main.cpp.o: \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/src/main.cpp \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/query_string.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/query_string.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -180,7 +180,7 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/http_parser_merged.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_parser_merged.h \
  /usr/include/assert.h /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -189,8 +189,8 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/common.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/utility.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/common.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/utility.h \
  /usr/include/c++/11/cstring /usr/include/c++/11/functional \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -228,7 +228,7 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/settings.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/settings.h \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
@@ -241,9 +241,9 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/ci_map.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/TinySHA1.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/socket_adaptors.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/ci_map.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/TinySHA1.hpp \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/socket_adaptors.h \
  /usr/include/asio.hpp /usr/include/asio/associated_allocator.hpp \
  /usr/include/asio/detail/config.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -801,42 +801,190 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/asio/windows/stream_handle.hpp /usr/include/asio/write.hpp \
  /usr/include/asio/write_at.hpp /usr/include/asio/impl/write_at.hpp \
  /usr/include/asio/version.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/socket_acceptors.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/logging.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/json.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/socket_acceptors.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/logging.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/json.h \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/returnable.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/mustache.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/returnable.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/mustache.h \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/task_timer.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/task_timer.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/http_request.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/websocket.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_request.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/websocket.h \
  /usr/include/c++/11/optional /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/http_response.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/mime_types.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/TinySHA1.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/parser.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/multipart.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/exceptions.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/multipart_view.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_response.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/mime_types.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/TinySHA1.hpp \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/parser.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/multipart.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/exceptions.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/multipart_view.h \
  /usr/include/c++/11/charconv \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/routing.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/middleware.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/middleware_context.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/compression.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/http_connection.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/compression.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/http_server.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/version.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/../Crow/include/crow/app.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/ImageProcessor.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/CPUProcessor.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project2/backend/include/CUDAProcessor.h
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/routing.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/middleware.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/middleware_context.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/compression.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_connection.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/compression.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_server.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/version.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/app.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/CPUProcessor.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/ImageProcessor.h \
+ /usr/include/opencv4/opencv2/opencv.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/core/version.hpp \
+ /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/c++/11/stdlib.h /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/check.hpp \
+ /usr/include/opencv4/opencv2/core/traits.hpp \
+ /usr/include/opencv4/opencv2/core/matx.hpp \
+ /usr/include/opencv4/opencv2/core/saturate.hpp \
+ /usr/include/opencv4/opencv2/core/fast_math.hpp \
+ /usr/include/opencv4/opencv2/core/types.hpp \
+ /usr/include/opencv4/opencv2/core/mat.hpp \
+ /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+ /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+ /usr/include/opencv4/opencv2/core/persistence.hpp \
+ /usr/include/opencv4/opencv2/core/operations.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/c++/11/complex \
+ /usr/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/opencv4/opencv2/core/optim.hpp \
+ /usr/include/opencv4/opencv2/core/ovx.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/calib3d.hpp \
+ /usr/include/opencv4/opencv2/features2d.hpp \
+ /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/config.h \
+ /usr/include/opencv4/opencv2/core/affine.hpp \
+ /usr/include/opencv4/opencv2/dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/core/async.hpp \
+ /usr/include/opencv4/opencv2/dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/dict.hpp \
+ /usr/include/opencv4/opencv2/dnn/layer.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/flann.hpp \
+ /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+ /usr/include/opencv4/opencv2/flann/general.h \
+ /usr/include/opencv4/opencv2/flann/matrix.h \
+ /usr/include/opencv4/opencv2/flann/params.h \
+ /usr/include/opencv4/opencv2/flann/any.h \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/saving.h \
+ /usr/include/opencv4/opencv2/flann/nn_index.h \
+ /usr/include/opencv4/opencv2/flann/result_set.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/opencv4/opencv2/flann/all_indices.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+ /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+ /usr/include/opencv4/opencv2/flann/dist.h \
+ /usr/include/opencv4/opencv2/flann/heap.h \
+ /usr/include/opencv4/opencv2/flann/allocator.h \
+ /usr/include/opencv4/opencv2/flann/random.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+ /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+ /usr/include/opencv4/opencv2/flann/logger.h \
+ /usr/include/opencv4/opencv2/flann/composite_index.h \
+ /usr/include/opencv4/opencv2/flann/linear_index.h \
+ /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_table.h \
+ /usr/include/c++/11/math.h \
+ /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+ /usr/include/opencv4/opencv2/flann/ground_truth.h \
+ /usr/include/opencv4/opencv2/flann/index_testing.h \
+ /usr/include/opencv4/opencv2/flann/timer.h \
+ /usr/include/opencv4/opencv2/flann/sampling.h \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgcodecs.hpp \
+ /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+ /usr/include/opencv4/opencv2/ml.hpp \
+ /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+ /usr/include/opencv4/opencv2/objdetect.hpp \
+ /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+ /usr/include/opencv4/opencv2/objdetect/face.hpp \
+ /usr/include/opencv4/opencv2/photo.hpp \
+ /usr/include/opencv4/opencv2/stitching.hpp \
+ /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.hpp \
+ /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/video.hpp \
+ /usr/include/opencv4/opencv2/video/tracking.hpp \
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/CUDAProcessor.h \
+ /usr/local/cuda/include/cuda_runtime.h \
+ /usr/local/cuda/include/crt/host_config.h \
+ /usr/local/cuda/include/builtin_types.h \
+ /usr/local/cuda/include/device_types.h \
+ /usr/local/cuda/include/crt/host_defines.h \
+ /usr/local/cuda/include/driver_types.h \
+ /usr/local/cuda/include/vector_types.h \
+ /usr/local/cuda/include/surface_types.h \
+ /usr/local/cuda/include/texture_types.h \
+ /usr/local/cuda/include/library_types.h \
+ /usr/local/cuda/include/channel_descriptor.h \
+ /usr/local/cuda/include/cuda_runtime_api.h \
+ /usr/local/cuda/include/cuda_device_runtime_api.h \
+ /usr/local/cuda/include/driver_functions.h \
+ /usr/local/cuda/include/vector_functions.h \
+ /usr/local/cuda/include/vector_functions.hpp \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h \
+ /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/thirdparty/json.hpp \
+ /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
+ /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/valarray \
+ /usr/include/c++/11/bits/valarray_array.h \
+ /usr/include/c++/11/bits/valarray_array.tcc \
+ /usr/include/c++/11/bits/valarray_before.h \
+ /usr/include/c++/11/bits/slice_array.h \
+ /usr/include/c++/11/bits/valarray_after.h \
+ /usr/include/c++/11/bits/gslice.h \
+ /usr/include/c++/11/bits/gslice_array.h \
+ /usr/include/c++/11/bits/mask_array.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/version

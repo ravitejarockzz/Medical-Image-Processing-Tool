@@ -42,6 +42,9 @@ fetch("/operations")
         gpuOption.text = "GPU";
         modeSelect.appendChild(gpuOption);
     }
+
+    opSelect.addEventListener("change", toggleControls);
+    toggleControls();
 });
 
 
@@ -52,6 +55,10 @@ fetch("/operations")
 kernel.oninput = () => kernelVal.innerText = kernel.value;
 low.oninput = () => lowVal.innerText = low.value;
 high.oninput = () => highVal.innerText = high.value;
+blockSize.oninput = () => blockSizeVal.innerText = blockSize.value;
+kSize.oninput = () => kSizeVal.innerText = kSize.value;
+kValue.oninput = () => kValueVal.innerText = kValue.value;
+harrisThreshold.oninput = () => harrisThresholdVal.innerText = harrisThreshold.value;
 
 
 // ----------------------
@@ -92,6 +99,9 @@ function toggleControls() {
     cannyControls.style.display =
         operation.value === "canny" ? "block" : "none";
 
+    harrisControls.style.display = 
+        operation.value === "harris_corner" ? "block" : "none";
+
     clearProcessed();   // ✅ reset processed when operation changes
 }
 
@@ -123,6 +133,13 @@ function processImage() {
     if (lastOperation === "canny") {
         config.parameters.low = parseInt(low.value);
         config.parameters.high = parseInt(high.value);
+    }
+
+    if (lastOperation === "harris_corner") {
+        config.parameters.block_size = parseInt(blockSize.value);
+        config.parameters.k_size = parseInt(kSize.value);
+        config.parameters.k = parseFloat(kValue.value); // Use parseFloat for decimals!
+        config.parameters.threshold = parseInt(harrisThreshold.value);
     }
 
     const form = new FormData();

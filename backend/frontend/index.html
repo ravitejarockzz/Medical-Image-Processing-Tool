@@ -52,6 +52,24 @@
             <span id="highVal">150</span>
             </div>
 
+            <div id="harrisControls" class="controlBox" style="display: none;">
+                Block Size
+                <input type="range" id="blockSize" min="2" max="10" step="1" value="2">
+                <span id="blockSizeVal">2</span><br>
+                
+                K Size (Odd)
+                <input type="range" id="kSize" min="3" max="7" step="2" value="3">
+                <span id="kSizeVal">3</span><br>
+
+                K Value
+                <input type="range" id="kValue" min="0.01" max="0.1" step="0.01" value="0.04">
+                <span id="kValueVal">0.04</span><br>
+
+                Threshold
+                <input type="range" id="harrisThreshold" min="0" max="255" step="1" value="150">
+                <span id="harrisThresholdVal">150</span>
+            </div>
+
         </div>
 
         <div class="buttons">

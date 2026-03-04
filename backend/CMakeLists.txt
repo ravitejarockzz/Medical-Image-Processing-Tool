@@ -1,44 +1,56 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(MedicalImageApp LANGUAGES CXX)
+project(ImageProcessingTool LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+option(USE_CUDA "Enable CUDA backend" ON)
+
+# -------------------------
+# Dependencies
+# -------------------------
 
 find_package(OpenCV REQUIRED)
 
-# Try to find CUDA (optional)
-find_package(CUDAToolkit)
-
-if (CUDAToolkit_FOUND)
-    enable_language(CUDA)
-    message(STATUS "CUDA found. GPU acceleration enabled.")
-    set(USE_CUDA ON)
-else()
-    message(STATUS "CUDA not found. Building CPU-only version.")
-    set(USE_CUDA OFF)
+if(USE_CUDA)
+    find_package(CUDAToolkit)
+    if(CUDAToolkit_FOUND)
+        enable_language(CUDA)
+        add_compile_definitions(USE_CUDA)
+    else()
+        message(WARNING "CUDA not found. Disabling CUDA backend.")
+        set(USE_CUDA OFF)
+    endif()
 endif()
 
-# Base executable (always compiled)
-add_executable(server
-    src/main.cpp
-    src/CPUProcessor.cpp
+# -------------------------
+# Source Collection (Modular)
+# -------------------------
+
+# Automatically re-scan when new files are added
+file(GLOB_RECURSE CPU_SOURCES CONFIGURE_DEPENDS
+    src/*.cpp
 )
 
-# If CUDA is available, add CUDA sources
-if (USE_CUDA)
-    target_sources(server PRIVATE src/CUDAProcessor.cu)
-
-    set_target_properties(server PROPERTIES
-        CUDA_SEPARABLE_COMPILATION ON
-        CUDA_ARCHITECTURES 89   # RTX 4050
+if(USE_CUDA)
+    file(GLOB_RECURSE CUDA_SOURCES CONFIGURE_DEPENDS
+        src/*.cu
     )
-
-    target_link_libraries(server PRIVATE CUDA::cudart)
-
-    target_compile_definitions(server PRIVATE USE_CUDA)
 endif()
+
+# -------------------------
+# Executable
+# -------------------------
+
+add_executable(server
+    ${CPU_SOURCES}
+    ${CUDA_SOURCES}
+)
+
+# -------------------------
+# Include Directories
+# -------------------------
 
 target_include_directories(server PRIVATE
     ${PROJECT_SOURCE_DIR}/include
@@ -46,6 +58,17 @@ target_include_directories(server PRIVATE
     ${CMAKE_SOURCE_DIR}/../Crow/include
 )
 
+# -------------------------
+# Link Libraries
+# -------------------------
+
 target_link_libraries(server PRIVATE
     ${OpenCV_LIBS}
 )
+
+if(USE_CUDA)
+    target_link_libraries(server PRIVATE CUDA::cudart)
+    set_target_properties(server PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON
+    )
+endif()

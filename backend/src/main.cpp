@@ -1,156 +1,185 @@
 #include "crow.h"
-#include "ImageProcessor.h"
-#include "CPUProcessor.h"
-#ifdef USE_CUDA
-#include "CUDAProcessor.h"
-#endif
+
+#include "processor/CPUProcessor.h"
+#include "processor/CUDAProcessor.h"
+#include "factory/FilterFactory.h"
+
+#include <opencv2/opencv.hpp>
+#include "thirdparty/json.hpp"
+
 #include <fstream>
 #include <sstream>
+#include <unordered_map>
+#include <memory>
 
-using namespace std;
+using json = nlohmann::json;
 
-// -----------------------------
-// Utility: Read file into string
-// -----------------------------
-std::string readFile(const std::string& path)
-{
-    std::ifstream file(path, std::ios::binary);
-    if (!file) return "";
-
-    std::ostringstream ss;
-    ss << file.rdbuf();
-    return ss.str();
-}
-
-int main()
-{
+int main() {
     crow::SimpleApp app;
 
-    // -----------------------------
-    // Serve static index.html
-    // -----------------------------
+#ifdef USE_CUDA
+    const bool gpuAvailable = true;
+#else
+    const bool gpuAvailable = false;
+#endif
+
+    // ============================================================
+    // Serve Frontend Files
+    // ============================================================
+
     CROW_ROUTE(app, "/")
     ([]() {
-        auto content = readFile("../static/index.html");
+        std::ifstream file("../frontend/index.html");
+        std::stringstream buffer;
+        buffer << file.rdbuf();
+
         crow::response res;
-        res.code = 200;
         res.set_header("Content-Type", "text/html");
-        res.write(content);
+        res.body = buffer.str();
         return res;
     });
 
-    // -----------------------------
-    // GET /operations
-    // -----------------------------
-    CROW_ROUTE(app, "/operations")
+    CROW_ROUTE(app, "/style.css")
     ([]() {
-        crow::json::wvalue x;
+        std::ifstream file("../frontend/style.css");
+        std::stringstream buffer;
+        buffer << file.rdbuf();
 
-        x["available_operations"][0] = "gaussian_blur";
-        x["available_operations"][1] = "canny";
-        x["available_operations"][2] = "grayscale";
-
-    #ifdef USE_CUDA
-        x["gpu_available"] = true;
-    #else
-        x["gpu_available"] = false;
-    #endif
-
-        return x;
+        crow::response res;
+        res.set_header("Content-Type", "text/css");
+        res.body = buffer.str();
+        return res;
     });
 
-    // -----------------------------
+    CROW_ROUTE(app, "/app.js")
+    ([]() {
+        std::ifstream file("../frontend/app.js");
+        std::stringstream buffer;
+        buffer << file.rdbuf();
+
+        crow::response res;
+        res.set_header("Content-Type", "application/javascript");
+        res.body = buffer.str();
+        return res;
+    });
+
+    // ============================================================
+    // GET /operations
+    // ============================================================
+
+    CROW_ROUTE(app, "/operations")
+    ([&]() {
+        auto& factory = FilterFactory::instance();
+
+        json response;
+        response["available_operations"] = factory.getAvailableCPU();
+        response["gpu_available"] = gpuAvailable;
+
+        crow::response res;
+        res.set_header("Content-Type", "application/json");
+        res.body = response.dump();
+        return res;
+    });
+
+    // ============================================================
     // POST /process
-    // -----------------------------
+    // ============================================================
+
     CROW_ROUTE(app, "/process").methods("POST"_method)
-    ([](const crow::request& req) {
+    ([&](const crow::request& req) {
 
-        try
-        {
-            crow::multipart::message msg(req);
+        try {
+            crow::multipart::message multipart(req);
 
-            auto filePart   = msg.get_part_by_name("file");
-            auto configPart = msg.get_part_by_name("config");
+        // -------------------------
+        // Extract Image File
+        // -------------------------
+        auto filePart = multipart.get_part_by_name("file");
 
-            std::string imageData = filePart.body;
-            std::string configStr = configPart.body;
+        if (filePart.body.empty()) {
+            return crow::response(400, "No file uploaded");
+        }
 
-            auto configJson = crow::json::load(configStr);
-            if (!configJson)
-                return crow::response(400, "Invalid JSON");
+        std::vector<uchar> buffer(
+            filePart.body.begin(),
+            filePart.body.end()
+        );
 
-            std::string operation = configJson["operation"].s();
+        cv::Mat input = cv::imdecode(buffer, cv::IMREAD_COLOR);
 
-            std::string mode = configJson["mode"].s();
+        if (input.empty()) {
+            return crow::response(400, "Invalid image");
+        }
 
+        // -------------------------
+        // Extract Config JSON
+        // -------------------------
+        auto configPart = multipart.get_part_by_name("config");
+
+        if (configPart.body.empty()) {
+            return crow::response(400, "Missing config");
+        }
+
+        json config = json::parse(configPart.body);
+
+            std::string operation = config["operation"];
+            std::string mode = config["mode"];
+
+            std::unordered_map<std::string, double> parameters;
+
+            if (config.contains("parameters")) {
+                for (auto& [key, value] : config["parameters"].items()) {
+                    parameters[key] = value.get<double>();
+                }
+            }
+
+            // -------------------------
+            // Select Processor
+            // -------------------------
             std::unique_ptr<ImageProcessor> processor;
 
-            #ifdef USE_CUDA
-                if (mode == "cuda")
-                    processor = std::make_unique<CUDAProcessor>();
-                else
-                    processor = std::make_unique<CPUProcessor>();
-            #else
+            if (mode == "cuda") {
+#ifdef USE_CUDA
+                processor = std::make_unique<CUDAProcessor>();
+#else
+                return crow::response(400, "CUDA not available");
+#endif
+            } else {
                 processor = std::make_unique<CPUProcessor>();
-            #endif
+            }
 
-            std::vector<unsigned char> result;
+            // -------------------------
+            // Process
+            // -------------------------
+            cv::Mat output = processor->process(
+                input,
+                operation,
+                parameters
+            );
 
-            if (operation == "gaussian_blur")
-            {
-                int kernel = configJson["parameters"]["kernel"].i();
-                result = processor->applyGaussianBlur(imageData, kernel);
-            }
-            else if (operation == "canny")
-            {
-                int low  = configJson["parameters"]["low"].i();
-                int high = configJson["parameters"]["high"].i();
-                result = processor->applyCanny(imageData, low, high);
-            }
-            else if (operation == "grayscale")
-            {
-                result = processor->applyGrayscale(imageData);
-            }
-            else
-            {
-                return crow::response(400, "Unknown operation");
-            }
+            // -------------------------
+            // Encode PNG
+            // -------------------------
+            std::vector<uchar> encoded;
+            cv::imencode(".png", output, encoded);
 
             crow::response res;
             res.code = 200;
             res.set_header("Content-Type", "image/png");
-            res.body = std::string(result.begin(), result.end());
+            res.body = std::string(encoded.begin(), encoded.end());
+
             return res;
         }
-        catch (const std::exception& e)
-        {
-            return crow::response(400, "Multipart parsing failed");
+        catch (const std::exception& e) {
+            return crow::response(500, e.what());
         }
     });
 
-    // -----------------------------
-    // Serve static CSS & JS
-    // -----------------------------
-    CROW_ROUTE(app, "/<string>")
-    ([](const std::string& filename) {
-        std::string path = "../static/" + filename;
-        auto content = readFile(path);
+    // ============================================================
+    // Run Server
+    // ============================================================
 
-        crow::response res;
+    app.port(18080).multithreaded().run();
 
-        if (filename.find(".css") != std::string::npos)
-            res.set_header("Content-Type", "text/css");
-        else if (filename.find(".js") != std::string::npos)
-            res.set_header("Content-Type", "application/javascript");
-
-        res.write(content);
-        return res;
-    });
-
-    // -----------------------------
-    // Start server
-    // -----------------------------
-    app.port(18080)
-       .multithreaded()
-       .run();
+    return 0;
 }

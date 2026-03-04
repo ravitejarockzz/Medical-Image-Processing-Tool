@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 CUDA_DEFINES = -DUSE_CUDA
 
-CUDA_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project2/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project2/backend/../Crow/include" -isystem=/usr/include/opencv4 -isystem=/usr/local/cuda/include
+CUDA_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project3/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project3/backend/../Crow/include" -isystem=/usr/include/opencv4 -isystem=/usr/local/cuda/include
 
-CUDA_FLAGS =  --generate-code=arch=compute_89,code=[compute_89,sm_89] -Xcompiler=-fPIE -std=c++17
+CUDA_FLAGS =  --generate-code=arch=compute_52,code=[compute_52,sm_52] -std=c++17
 
 CXX_DEFINES = -DUSE_CUDA
 
-CXX_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project2/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project2/backend/../Crow/include" -isystem /usr/include/opencv4 -isystem /usr/local/cuda/include
+CXX_INCLUDES = -I"/mnt/d/Sai Satish/Image Processing/project3/backend/include" -I"/mnt/d/Sai Satish/Image Processing/project3/backend/../Crow/include" -isystem /usr/include/opencv4 -isystem /usr/local/cuda/include
 
-CXX_FLAGS = -fPIE -std=gnu++17
+CXX_FLAGS = -std=gnu++17
 
