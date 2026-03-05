@@ -154,6 +154,30 @@ src/cpu/BilateralFilter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.s
 .PHONY : src/cpu/BilateralFilter.cpp.s
 
+src/cpu/CLAHE.o: src/cpu/CLAHE.cpp.o
+.PHONY : src/cpu/CLAHE.o
+
+# target to build an object file
+src/cpu/CLAHE.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o
+.PHONY : src/cpu/CLAHE.cpp.o
+
+src/cpu/CLAHE.i: src/cpu/CLAHE.cpp.i
+.PHONY : src/cpu/CLAHE.i
+
+# target to preprocess a source file
+src/cpu/CLAHE.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/CLAHE.cpp.i
+.PHONY : src/cpu/CLAHE.cpp.i
+
+src/cpu/CLAHE.s: src/cpu/CLAHE.cpp.s
+.PHONY : src/cpu/CLAHE.s
+
+# target to generate assembly for a file
+src/cpu/CLAHE.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/CLAHE.cpp.s
+.PHONY : src/cpu/CLAHE.cpp.s
+
 src/cpu/Canny.o: src/cpu/Canny.cpp.o
 .PHONY : src/cpu/Canny.o
 
@@ -321,6 +345,30 @@ src/cuda/BilateralFilter.s: src/cuda/BilateralFilter.cu.s
 src/cuda/BilateralFilter.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.s
 .PHONY : src/cuda/BilateralFilter.cu.s
+
+src/cuda/CLAHE.o: src/cuda/CLAHE.cu.o
+.PHONY : src/cuda/CLAHE.o
+
+# target to build an object file
+src/cuda/CLAHE.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.o
+.PHONY : src/cuda/CLAHE.cu.o
+
+src/cuda/CLAHE.i: src/cuda/CLAHE.cu.i
+.PHONY : src/cuda/CLAHE.i
+
+# target to preprocess a source file
+src/cuda/CLAHE.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.i
+.PHONY : src/cuda/CLAHE.cu.i
+
+src/cuda/CLAHE.s: src/cuda/CLAHE.cu.s
+.PHONY : src/cuda/CLAHE.s
+
+# target to generate assembly for a file
+src/cuda/CLAHE.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.s
+.PHONY : src/cuda/CLAHE.cu.s
 
 src/cuda/Canny.o: src/cuda/Canny.cu.o
 .PHONY : src/cuda/Canny.o
@@ -574,6 +622,9 @@ help:
 	@echo "... src/cpu/BilateralFilter.o"
 	@echo "... src/cpu/BilateralFilter.i"
 	@echo "... src/cpu/BilateralFilter.s"
+	@echo "... src/cpu/CLAHE.o"
+	@echo "... src/cpu/CLAHE.i"
+	@echo "... src/cpu/CLAHE.s"
 	@echo "... src/cpu/Canny.o"
 	@echo "... src/cpu/Canny.i"
 	@echo "... src/cpu/Canny.s"
@@ -595,6 +646,9 @@ help:
 	@echo "... src/cuda/BilateralFilter.o"
 	@echo "... src/cuda/BilateralFilter.i"
 	@echo "... src/cuda/BilateralFilter.s"
+	@echo "... src/cuda/CLAHE.o"
+	@echo "... src/cuda/CLAHE.i"
+	@echo "... src/cuda/CLAHE.s"
 	@echo "... src/cuda/Canny.o"
 	@echo "... src/cuda/Canny.i"
 	@echo "... src/cuda/Canny.s"

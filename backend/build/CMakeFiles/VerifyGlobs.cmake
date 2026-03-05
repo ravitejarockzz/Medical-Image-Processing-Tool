@@ -6,6 +6,7 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cpp")
 set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/BilateralFilter.cpp"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/CLAHE.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Canny.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GaussianBlur.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GrayScale.cpp"
@@ -25,6 +26,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cu")
 set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GaussianBlur.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GrayScale.cu"

@@ -73,6 +73,10 @@ biDiameter.oninput = () => biDiameterVal.innerText = biDiameter.value;
 biSigmaColor.oninput = () => biSigmaColorVal.innerText = biSigmaColor.value;
 biSigmaSpace.oninput = () => biSigmaSpaceVal.innerText = biSigmaSpace.value;
 
+// Contrast Limited Adaptive Histogram Equalization (CLAHE) sliders
+claheClipLimit.oninput = () => claheClipLimitVal.innerText = claheClipLimit.value;
+claheTileSize.oninput = () => claheTileSizeVal.innerText = claheTileSize.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -122,6 +126,9 @@ function toggleControls() {
 
     histEqControls.style.display = 
             operation.value === "histogram_equalization" ? "block" : "none";    
+    
+    claheControls.style.display = 
+        operation.value === "clahe" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -171,6 +178,11 @@ function processImage() {
         config.parameters.d = parseInt(biDiameter.value);
         config.parameters.sigma_color = parseFloat(biSigmaColor.value);
         config.parameters.sigma_space = parseFloat(biSigmaSpace.value);
+    }
+
+    if (lastOperation === "clahe") {
+        config.parameters.clip_limit = parseFloat(claheClipLimit.value);
+        config.parameters.tile_grid_size = parseInt(claheTileSize.value);
     }
 
     const form = new FormData();

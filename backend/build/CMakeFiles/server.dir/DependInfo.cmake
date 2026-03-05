@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu" "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o.d"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu" "CMakeFiles/server.dir/src/cuda/CLAHE.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/CLAHE.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu" "CMakeFiles/server.dir/src/cuda/Canny.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/Canny.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GaussianBlur.cu" "CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GrayScale.cu" "CMakeFiles/server.dir/src/cuda/GrayScale.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/GrayScale.cu.o.d"
@@ -17,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu" "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu" "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o" "gcc" "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/BilateralFilter.cpp" "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o.d"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/CLAHE.cpp" "CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Canny.cpp" "CMakeFiles/server.dir/src/cpu/Canny.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/Canny.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GaussianBlur.cpp" "CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GrayScale.cpp" "CMakeFiles/server.dir/src/cpu/GrayScale.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/GrayScale.cpp.o.d"
