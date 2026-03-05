@@ -52,14 +52,26 @@ fetch("/operations")
 // Slider labels
 // ----------------------
 
+// Gaussian blur slider
 kernel.oninput = () => kernelVal.innerText = kernel.value;
+
+// Canny sliders
 low.oninput = () => lowVal.innerText = low.value;
 high.oninput = () => highVal.innerText = high.value;
+
+// Harris sliders
 blockSize.oninput = () => blockSizeVal.innerText = blockSize.value;
 kSize.oninput = () => kSizeVal.innerText = kSize.value;
 kValue.oninput = () => kValueVal.innerText = kValue.value;
 harrisThreshold.oninput = () => harrisThresholdVal.innerText = harrisThreshold.value;
+
+// Median blur slider
 medianKSize.oninput = () => medianKSizeVal.innerText = medianKSize.value;
+
+// Bilateral sliders
+biDiameter.oninput = () => biDiameterVal.innerText = biDiameter.value;
+biSigmaColor.oninput = () => biSigmaColorVal.innerText = biSigmaColor.value;
+biSigmaSpace.oninput = () => biSigmaSpaceVal.innerText = biSigmaSpace.value;
 
 // ----------------------
 // Preview on select (NEW)
@@ -105,6 +117,9 @@ function toggleControls() {
     medianBlurControls.style.display = 
         operation.value === "median_blur" ? "block" : "none";
 
+    bilateralControls.style.display =
+        operation.value === "bilateral_filter" ? "block" : "none";
+
     clearProcessed();   // ✅ reset processed when operation changes
 }
 
@@ -147,6 +162,12 @@ function processImage() {
 
     if (lastOperation === "median_blur") {
         config.parameters.ksize = parseInt(medianKSize.value);
+    }
+
+    if (lastOperation === "bilateral_filter") {
+        config.parameters.d = parseInt(biDiameter.value);
+        config.parameters.sigma_color = parseFloat(biSigmaColor.value);
+        config.parameters.sigma_space = parseFloat(biSigmaSpace.value);
     }
 
     const form = new FormData();

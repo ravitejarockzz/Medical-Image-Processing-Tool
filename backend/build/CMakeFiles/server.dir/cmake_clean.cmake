@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/server.dir/cmake_device_link.o"
+  "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o"
+  "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/Canny.cpp.o"
   "CMakeFiles/server.dir/src/cpu/Canny.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/GaussianBlur.cpp.o"
@@ -10,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o"
   "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o.d"
+  "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o"
+  "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o.d"
   "CMakeFiles/server.dir/src/cuda/Canny.cu.o"
   "CMakeFiles/server.dir/src/cuda/Canny.cu.o.d"
   "CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o"

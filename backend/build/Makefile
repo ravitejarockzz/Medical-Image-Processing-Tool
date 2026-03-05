@@ -130,6 +130,30 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+src/cpu/BilateralFilter.o: src/cpu/BilateralFilter.cpp.o
+.PHONY : src/cpu/BilateralFilter.o
+
+# target to build an object file
+src/cpu/BilateralFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o
+.PHONY : src/cpu/BilateralFilter.cpp.o
+
+src/cpu/BilateralFilter.i: src/cpu/BilateralFilter.cpp.i
+.PHONY : src/cpu/BilateralFilter.i
+
+# target to preprocess a source file
+src/cpu/BilateralFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.i
+.PHONY : src/cpu/BilateralFilter.cpp.i
+
+src/cpu/BilateralFilter.s: src/cpu/BilateralFilter.cpp.s
+.PHONY : src/cpu/BilateralFilter.s
+
+# target to generate assembly for a file
+src/cpu/BilateralFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.s
+.PHONY : src/cpu/BilateralFilter.cpp.s
+
 src/cpu/Canny.o: src/cpu/Canny.cpp.o
 .PHONY : src/cpu/Canny.o
 
@@ -249,6 +273,30 @@ src/cpu/MedianBlur.s: src/cpu/MedianBlur.cpp.s
 src/cpu/MedianBlur.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.s
 .PHONY : src/cpu/MedianBlur.cpp.s
+
+src/cuda/BilateralFilter.o: src/cuda/BilateralFilter.cu.o
+.PHONY : src/cuda/BilateralFilter.o
+
+# target to build an object file
+src/cuda/BilateralFilter.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o
+.PHONY : src/cuda/BilateralFilter.cu.o
+
+src/cuda/BilateralFilter.i: src/cuda/BilateralFilter.cu.i
+.PHONY : src/cuda/BilateralFilter.i
+
+# target to preprocess a source file
+src/cuda/BilateralFilter.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.i
+.PHONY : src/cuda/BilateralFilter.cu.i
+
+src/cuda/BilateralFilter.s: src/cuda/BilateralFilter.cu.s
+.PHONY : src/cuda/BilateralFilter.s
+
+# target to generate assembly for a file
+src/cuda/BilateralFilter.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.s
+.PHONY : src/cuda/BilateralFilter.cu.s
 
 src/cuda/Canny.o: src/cuda/Canny.cu.o
 .PHONY : src/cuda/Canny.o
@@ -475,6 +523,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... src/cpu/BilateralFilter.o"
+	@echo "... src/cpu/BilateralFilter.i"
+	@echo "... src/cpu/BilateralFilter.s"
 	@echo "... src/cpu/Canny.o"
 	@echo "... src/cpu/Canny.i"
 	@echo "... src/cpu/Canny.s"
@@ -490,6 +541,9 @@ help:
 	@echo "... src/cpu/MedianBlur.o"
 	@echo "... src/cpu/MedianBlur.i"
 	@echo "... src/cpu/MedianBlur.s"
+	@echo "... src/cuda/BilateralFilter.o"
+	@echo "... src/cuda/BilateralFilter.i"
+	@echo "... src/cuda/BilateralFilter.s"
 	@echo "... src/cuda/Canny.o"
 	@echo "... src/cuda/Canny.i"
 	@echo "... src/cuda/Canny.s"
