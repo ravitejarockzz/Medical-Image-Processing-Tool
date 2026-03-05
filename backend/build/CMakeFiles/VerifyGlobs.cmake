@@ -9,6 +9,7 @@ set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GaussianBlur.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GrayScale.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HarrisCorner.cpp"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/MedianBlur.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp"
@@ -25,6 +26,7 @@ set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GaussianBlur.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GrayScale.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HarrisCorner.cu"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

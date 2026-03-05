@@ -59,7 +59,7 @@ blockSize.oninput = () => blockSizeVal.innerText = blockSize.value;
 kSize.oninput = () => kSizeVal.innerText = kSize.value;
 kValue.oninput = () => kValueVal.innerText = kValue.value;
 harrisThreshold.oninput = () => harrisThresholdVal.innerText = harrisThreshold.value;
-
+medianKSize.oninput = () => medianKSizeVal.innerText = medianKSize.value;
 
 // ----------------------
 // Preview on select (NEW)
@@ -102,6 +102,9 @@ function toggleControls() {
     harrisControls.style.display = 
         operation.value === "harris_corner" ? "block" : "none";
 
+    medianBlurControls.style.display = 
+        operation.value === "median_blur" ? "block" : "none";
+
     clearProcessed();   // ✅ reset processed when operation changes
 }
 
@@ -140,6 +143,10 @@ function processImage() {
         config.parameters.k_size = parseInt(kSize.value);
         config.parameters.k = parseFloat(kValue.value); // Use parseFloat for decimals!
         config.parameters.threshold = parseInt(harrisThreshold.value);
+    }
+
+    if (lastOperation === "median_blur") {
+        config.parameters.ksize = parseInt(medianKSize.value);
     }
 
     const form = new FormData();

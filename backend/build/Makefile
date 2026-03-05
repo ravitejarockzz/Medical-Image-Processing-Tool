@@ -226,6 +226,30 @@ src/cpu/HarrisCorner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.s
 .PHONY : src/cpu/HarrisCorner.cpp.s
 
+src/cpu/MedianBlur.o: src/cpu/MedianBlur.cpp.o
+.PHONY : src/cpu/MedianBlur.o
+
+# target to build an object file
+src/cpu/MedianBlur.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o
+.PHONY : src/cpu/MedianBlur.cpp.o
+
+src/cpu/MedianBlur.i: src/cpu/MedianBlur.cpp.i
+.PHONY : src/cpu/MedianBlur.i
+
+# target to preprocess a source file
+src/cpu/MedianBlur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.i
+.PHONY : src/cpu/MedianBlur.cpp.i
+
+src/cpu/MedianBlur.s: src/cpu/MedianBlur.cpp.s
+.PHONY : src/cpu/MedianBlur.s
+
+# target to generate assembly for a file
+src/cpu/MedianBlur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.s
+.PHONY : src/cpu/MedianBlur.cpp.s
+
 src/cuda/Canny.o: src/cuda/Canny.cu.o
 .PHONY : src/cuda/Canny.o
 
@@ -321,6 +345,30 @@ src/cuda/HarrisCorner.s: src/cuda/HarrisCorner.cu.s
 src/cuda/HarrisCorner.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.s
 .PHONY : src/cuda/HarrisCorner.cu.s
+
+src/cuda/MedianBlur.o: src/cuda/MedianBlur.cu.o
+.PHONY : src/cuda/MedianBlur.o
+
+# target to build an object file
+src/cuda/MedianBlur.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o
+.PHONY : src/cuda/MedianBlur.cu.o
+
+src/cuda/MedianBlur.i: src/cuda/MedianBlur.cu.i
+.PHONY : src/cuda/MedianBlur.i
+
+# target to preprocess a source file
+src/cuda/MedianBlur.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.i
+.PHONY : src/cuda/MedianBlur.cu.i
+
+src/cuda/MedianBlur.s: src/cuda/MedianBlur.cu.s
+.PHONY : src/cuda/MedianBlur.s
+
+# target to generate assembly for a file
+src/cuda/MedianBlur.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.s
+.PHONY : src/cuda/MedianBlur.cu.s
 
 src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
 .PHONY : src/factory/FilterFactory.o
@@ -439,6 +487,9 @@ help:
 	@echo "... src/cpu/HarrisCorner.o"
 	@echo "... src/cpu/HarrisCorner.i"
 	@echo "... src/cpu/HarrisCorner.s"
+	@echo "... src/cpu/MedianBlur.o"
+	@echo "... src/cpu/MedianBlur.i"
+	@echo "... src/cpu/MedianBlur.s"
 	@echo "... src/cuda/Canny.o"
 	@echo "... src/cuda/Canny.i"
 	@echo "... src/cuda/Canny.s"
@@ -451,6 +502,9 @@ help:
 	@echo "... src/cuda/HarrisCorner.o"
 	@echo "... src/cuda/HarrisCorner.i"
 	@echo "... src/cuda/HarrisCorner.s"
+	@echo "... src/cuda/MedianBlur.o"
+	@echo "... src/cuda/MedianBlur.i"
+	@echo "... src/cuda/MedianBlur.s"
 	@echo "... src/factory/FilterFactory.o"
 	@echo "... src/factory/FilterFactory.i"
 	@echo "... src/factory/FilterFactory.s"
