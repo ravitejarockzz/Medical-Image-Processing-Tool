@@ -120,6 +120,9 @@ function toggleControls() {
     bilateralControls.style.display =
         operation.value === "bilateral_filter" ? "block" : "none";
 
+    histEqControls.style.display = 
+            operation.value === "histogram_equalization" ? "block" : "none";    
+        
     clearProcessed();   // ✅ reset processed when operation changes
 }
 

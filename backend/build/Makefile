@@ -250,6 +250,30 @@ src/cpu/HarrisCorner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.s
 .PHONY : src/cpu/HarrisCorner.cpp.s
 
+src/cpu/HistogramEqualization.o: src/cpu/HistogramEqualization.cpp.o
+.PHONY : src/cpu/HistogramEqualization.o
+
+# target to build an object file
+src/cpu/HistogramEqualization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.o
+.PHONY : src/cpu/HistogramEqualization.cpp.o
+
+src/cpu/HistogramEqualization.i: src/cpu/HistogramEqualization.cpp.i
+.PHONY : src/cpu/HistogramEqualization.i
+
+# target to preprocess a source file
+src/cpu/HistogramEqualization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.i
+.PHONY : src/cpu/HistogramEqualization.cpp.i
+
+src/cpu/HistogramEqualization.s: src/cpu/HistogramEqualization.cpp.s
+.PHONY : src/cpu/HistogramEqualization.s
+
+# target to generate assembly for a file
+src/cpu/HistogramEqualization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.s
+.PHONY : src/cpu/HistogramEqualization.cpp.s
+
 src/cpu/MedianBlur.o: src/cpu/MedianBlur.cpp.o
 .PHONY : src/cpu/MedianBlur.o
 
@@ -393,6 +417,30 @@ src/cuda/HarrisCorner.s: src/cuda/HarrisCorner.cu.s
 src/cuda/HarrisCorner.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.s
 .PHONY : src/cuda/HarrisCorner.cu.s
+
+src/cuda/HistogramEqualization.o: src/cuda/HistogramEqualization.cu.o
+.PHONY : src/cuda/HistogramEqualization.o
+
+# target to build an object file
+src/cuda/HistogramEqualization.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o
+.PHONY : src/cuda/HistogramEqualization.cu.o
+
+src/cuda/HistogramEqualization.i: src/cuda/HistogramEqualization.cu.i
+.PHONY : src/cuda/HistogramEqualization.i
+
+# target to preprocess a source file
+src/cuda/HistogramEqualization.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.i
+.PHONY : src/cuda/HistogramEqualization.cu.i
+
+src/cuda/HistogramEqualization.s: src/cuda/HistogramEqualization.cu.s
+.PHONY : src/cuda/HistogramEqualization.s
+
+# target to generate assembly for a file
+src/cuda/HistogramEqualization.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.s
+.PHONY : src/cuda/HistogramEqualization.cu.s
 
 src/cuda/MedianBlur.o: src/cuda/MedianBlur.cu.o
 .PHONY : src/cuda/MedianBlur.o
@@ -538,6 +586,9 @@ help:
 	@echo "... src/cpu/HarrisCorner.o"
 	@echo "... src/cpu/HarrisCorner.i"
 	@echo "... src/cpu/HarrisCorner.s"
+	@echo "... src/cpu/HistogramEqualization.o"
+	@echo "... src/cpu/HistogramEqualization.i"
+	@echo "... src/cpu/HistogramEqualization.s"
 	@echo "... src/cpu/MedianBlur.o"
 	@echo "... src/cpu/MedianBlur.i"
 	@echo "... src/cpu/MedianBlur.s"
@@ -556,6 +607,9 @@ help:
 	@echo "... src/cuda/HarrisCorner.o"
 	@echo "... src/cuda/HarrisCorner.i"
 	@echo "... src/cuda/HarrisCorner.s"
+	@echo "... src/cuda/HistogramEqualization.o"
+	@echo "... src/cuda/HistogramEqualization.i"
+	@echo "... src/cuda/HistogramEqualization.s"
 	@echo "... src/cuda/MedianBlur.o"
 	@echo "... src/cuda/MedianBlur.i"
 	@echo "... src/cuda/MedianBlur.s"
