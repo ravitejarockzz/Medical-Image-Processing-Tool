@@ -25,6 +25,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HarrisCorner.cpp" "CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/HarrisCorner.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HistogramEqualization.cpp" "CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/MedianBlur.cpp" "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o.d"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/OtsuThreshold.cpp" "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o.d"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/OtsuThreshold.cpp" "CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.o" "gcc" "CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp" "CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o" "gcc" "CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp" "CMakeFiles/server.dir/src/main.cpp.o" "gcc" "CMakeFiles/server.dir/src/main.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp" "CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o" "gcc" "CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o.d"

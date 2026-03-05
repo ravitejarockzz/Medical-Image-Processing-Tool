@@ -129,6 +129,9 @@ function toggleControls() {
     
     claheControls.style.display = 
         operation.value === "clahe" ? "block" : "none";
+
+    otsuControls.style.display = 
+        operation.value === "otsu_threshold" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }

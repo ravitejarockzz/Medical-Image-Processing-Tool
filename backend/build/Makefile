@@ -322,6 +322,30 @@ src/cpu/MedianBlur.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.s
 .PHONY : src/cpu/MedianBlur.cpp.s
 
+src/cpu/OtsuThreshold.o: src/cpu/OtsuThreshold.cpp.o
+.PHONY : src/cpu/OtsuThreshold.o
+
+# target to build an object file
+src/cpu/OtsuThreshold.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o
+.PHONY : src/cpu/OtsuThreshold.cpp.o
+
+src/cpu/OtsuThreshold.i: src/cpu/OtsuThreshold.cpp.i
+.PHONY : src/cpu/OtsuThreshold.i
+
+# target to preprocess a source file
+src/cpu/OtsuThreshold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.i
+.PHONY : src/cpu/OtsuThreshold.cpp.i
+
+src/cpu/OtsuThreshold.s: src/cpu/OtsuThreshold.cpp.s
+.PHONY : src/cpu/OtsuThreshold.s
+
+# target to generate assembly for a file
+src/cpu/OtsuThreshold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.s
+.PHONY : src/cpu/OtsuThreshold.cpp.s
+
 src/cuda/BilateralFilter.o: src/cuda/BilateralFilter.cu.o
 .PHONY : src/cuda/BilateralFilter.o
 
@@ -514,6 +538,30 @@ src/cuda/MedianBlur.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.s
 .PHONY : src/cuda/MedianBlur.cu.s
 
+src/cuda/OtsuThreshold.o: src/cuda/OtsuThreshold.cpp.o
+.PHONY : src/cuda/OtsuThreshold.o
+
+# target to build an object file
+src/cuda/OtsuThreshold.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.o
+.PHONY : src/cuda/OtsuThreshold.cpp.o
+
+src/cuda/OtsuThreshold.i: src/cuda/OtsuThreshold.cpp.i
+.PHONY : src/cuda/OtsuThreshold.i
+
+# target to preprocess a source file
+src/cuda/OtsuThreshold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.i
+.PHONY : src/cuda/OtsuThreshold.cpp.i
+
+src/cuda/OtsuThreshold.s: src/cuda/OtsuThreshold.cpp.s
+.PHONY : src/cuda/OtsuThreshold.s
+
+# target to generate assembly for a file
+src/cuda/OtsuThreshold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.s
+.PHONY : src/cuda/OtsuThreshold.cpp.s
+
 src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
 .PHONY : src/factory/FilterFactory.o
 
@@ -643,6 +691,9 @@ help:
 	@echo "... src/cpu/MedianBlur.o"
 	@echo "... src/cpu/MedianBlur.i"
 	@echo "... src/cpu/MedianBlur.s"
+	@echo "... src/cpu/OtsuThreshold.o"
+	@echo "... src/cpu/OtsuThreshold.i"
+	@echo "... src/cpu/OtsuThreshold.s"
 	@echo "... src/cuda/BilateralFilter.o"
 	@echo "... src/cuda/BilateralFilter.i"
 	@echo "... src/cuda/BilateralFilter.s"
@@ -667,6 +718,9 @@ help:
 	@echo "... src/cuda/MedianBlur.o"
 	@echo "... src/cuda/MedianBlur.i"
 	@echo "... src/cuda/MedianBlur.s"
+	@echo "... src/cuda/OtsuThreshold.o"
+	@echo "... src/cuda/OtsuThreshold.i"
+	@echo "... src/cuda/OtsuThreshold.s"
 	@echo "... src/factory/FilterFactory.o"
 	@echo "... src/factory/FilterFactory.i"
 	@echo "... src/factory/FilterFactory.s"

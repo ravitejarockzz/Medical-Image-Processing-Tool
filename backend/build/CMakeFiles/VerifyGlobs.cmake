@@ -13,6 +13,8 @@ set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HarrisCorner.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HistogramEqualization.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/MedianBlur.cpp"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/OtsuThreshold.cpp"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/OtsuThreshold.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp"
