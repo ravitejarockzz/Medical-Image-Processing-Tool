@@ -223,10 +223,24 @@ CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/SIFTDetector.cpp" -o CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.s
 
+CMakeFiles/server.dir/src/cpu/Watershed.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/cpu/Watershed.cpp.o: ../src/cpu/Watershed.cpp
+CMakeFiles/server.dir/src/cpu/Watershed.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/src/cpu/Watershed.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/cpu/Watershed.cpp.o -MF CMakeFiles/server.dir/src/cpu/Watershed.cpp.o.d -o CMakeFiles/server.dir/src/cpu/Watershed.cpp.o -c "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Watershed.cpp"
+
+CMakeFiles/server.dir/src/cpu/Watershed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/cpu/Watershed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Watershed.cpp" > CMakeFiles/server.dir/src/cpu/Watershed.cpp.i
+
+CMakeFiles/server.dir/src/cpu/Watershed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/cpu/Watershed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Watershed.cpp" -o CMakeFiles/server.dir/src/cpu/Watershed.cpp.s
+
 CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o: ../src/factory/FilterFactory.cpp
 CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o -MF CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o.d -o CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o -c "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp"
 
 CMakeFiles/server.dir/src/factory/FilterFactory.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/server.dir/src/factory/FilterFactory.cpp.s: cmake_force
 CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/main.cpp.o -MF CMakeFiles/server.dir/src/main.cpp.o.d -o CMakeFiles/server.dir/src/main.cpp.o -c "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp"
 
 CMakeFiles/server.dir/src/main.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/server.dir/src/main.cpp.s: cmake_force
 CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o: ../src/processor/CPUProcessor.cpp
 CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o -MF CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o.d -o CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o -c "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp"
 
 CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.s: cmake_force
 CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o: ../src/cuda/AdaptiveThreshold.cu
 CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CUDA object CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CUDA object CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o -MF CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/AdaptiveThreshold.cu" -o CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o
 
 CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o: ../src/cuda/BilateralFilter.cu
 CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CUDA object CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CUDA object CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o -MF CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu" -o CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o
 
 CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/CLAHE.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/CLAHE.cu.o: ../src/cuda/CLAHE.cu
 CMakeFiles/server.dir/src/cuda/CLAHE.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CUDA object CMakeFiles/server.dir/src/cuda/CLAHE.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CUDA object CMakeFiles/server.dir/src/cuda/CLAHE.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/CLAHE.cu.o -MF CMakeFiles/server.dir/src/cuda/CLAHE.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu" -o CMakeFiles/server.dir/src/cuda/CLAHE.cu.o
 
 CMakeFiles/server.dir/src/cuda/CLAHE.cu.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/server.dir/src/cuda/CLAHE.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/Canny.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/Canny.cu.o: ../src/cuda/Canny.cu
 CMakeFiles/server.dir/src/cuda/Canny.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CUDA object CMakeFiles/server.dir/src/cuda/Canny.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CUDA object CMakeFiles/server.dir/src/cuda/Canny.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/Canny.cu.o -MF CMakeFiles/server.dir/src/cuda/Canny.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu" -o CMakeFiles/server.dir/src/cuda/Canny.cu.o
 
 CMakeFiles/server.dir/src/cuda/Canny.cu.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/server.dir/src/cuda/Canny.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o: ../src/cuda/GaussianBlur.cu
 CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CUDA object CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CUDA object CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o -MF CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GaussianBlur.cu" -o CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o
 
 CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/GrayScale.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/GrayScale.cu.o: ../src/cuda/GrayScale.cu
 CMakeFiles/server.dir/src/cuda/GrayScale.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CUDA object CMakeFiles/server.dir/src/cuda/GrayScale.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CUDA object CMakeFiles/server.dir/src/cuda/GrayScale.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/GrayScale.cu.o -MF CMakeFiles/server.dir/src/cuda/GrayScale.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GrayScale.cu" -o CMakeFiles/server.dir/src/cuda/GrayScale.cu.o
 
 CMakeFiles/server.dir/src/cuda/GrayScale.cu.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/server.dir/src/cuda/GrayScale.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o: ../src/cuda/HarrisCorner.cu
 CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CUDA object CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CUDA object CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o -MF CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HarrisCorner.cu" -o CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o
 
 CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o: ../src/cuda/HistogramEqualization.cu
 CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CUDA object CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CUDA object CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o -MF CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HistogramEqualization.cu" -o CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o
 
 CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o: ../src/cuda/MedianBlur.cu
 CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CUDA object CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CUDA object CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o -MF CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu" -o CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o
 
 CMakeFiles/server.dir/src/cuda/MedianBlur.cu.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/server.dir/src/cuda/MedianBlur.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o: ../src/cuda/OtsuThreshold.cu
 CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CUDA object CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CUDA object CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o -MF CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/OtsuThreshold.cu" -o CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o
 
 CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.s: cmake_force
 CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o: ../src/cuda/SIFTDetector.cu
 CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CUDA object CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CUDA object CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o -MF CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/SIFTDetector.cu" -o CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o
 
 CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.i: cmake_force
@@ -419,10 +433,24 @@ CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/server.dir/src/cuda/Watershed.cu.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/cuda/Watershed.cu.o: ../src/cuda/Watershed.cu
+CMakeFiles/server.dir/src/cuda/Watershed.cu.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CUDA object CMakeFiles/server.dir/src/cuda/Watershed.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/cuda/Watershed.cu.o -MF CMakeFiles/server.dir/src/cuda/Watershed.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Watershed.cu" -o CMakeFiles/server.dir/src/cuda/Watershed.cu.o
+
+CMakeFiles/server.dir/src/cuda/Watershed.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/server.dir/src/cuda/Watershed.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/server.dir/src/cuda/Watershed.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/server.dir/src/cuda/Watershed.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o: ../src/processor/CUDAProcessor.cu
 CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CUDA object CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CUDA object CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o -MF CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o.d -x cu -dc "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu" -o CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o
 
 CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.i: cmake_force
@@ -446,6 +474,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o" \
 "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o" \
 "CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.o" \
+"CMakeFiles/server.dir/src/cpu/Watershed.cpp.o" \
 "CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o" \
 "CMakeFiles/server.dir/src/main.cpp.o" \
 "CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o" \
@@ -460,6 +489,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o" \
 "CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o" \
 "CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o" \
+"CMakeFiles/server.dir/src/cuda/Watershed.cu.o" \
 "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o"
 
 # External object files for target server
@@ -476,6 +506,7 @@ CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cpu/Histogr
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.o
+CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cpu/Watershed.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/main.cpp.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o
@@ -490,6 +521,7 @@ CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cuda/Histog
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o
+CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/cuda/Watershed.cu.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/build.make
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
@@ -548,7 +580,7 @@ CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_p
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 CMakeFiles/server.dir/cmake_device_link.o: CMakeFiles/server.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Linking CUDA device code CMakeFiles/server.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Linking CUDA device code CMakeFiles/server.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -568,6 +600,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o" \
 "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o" \
 "CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.o" \
+"CMakeFiles/server.dir/src/cpu/Watershed.cpp.o" \
 "CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o" \
 "CMakeFiles/server.dir/src/main.cpp.o" \
 "CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o" \
@@ -582,6 +615,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o" \
 "CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o" \
 "CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o" \
+"CMakeFiles/server.dir/src/cuda/Watershed.cu.o" \
 "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o"
 
 # External object files for target server
@@ -598,6 +632,7 @@ server: CMakeFiles/server.dir/src/cpu/HistogramEqualization.cpp.o
 server: CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o
 server: CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o
 server: CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.o
+server: CMakeFiles/server.dir/src/cpu/Watershed.cpp.o
 server: CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o
 server: CMakeFiles/server.dir/src/main.cpp.o
 server: CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o
@@ -612,6 +647,7 @@ server: CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o
 server: CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o
 server: CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o
 server: CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o
+server: CMakeFiles/server.dir/src/cuda/Watershed.cu.o
 server: CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
@@ -671,7 +707,7 @@ server: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 server: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 server: CMakeFiles/server.dir/cmake_device_link.o
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -394,6 +394,30 @@ src/cpu/SIFTDetector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.s
 .PHONY : src/cpu/SIFTDetector.cpp.s
 
+src/cpu/Watershed.o: src/cpu/Watershed.cpp.o
+.PHONY : src/cpu/Watershed.o
+
+# target to build an object file
+src/cpu/Watershed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Watershed.cpp.o
+.PHONY : src/cpu/Watershed.cpp.o
+
+src/cpu/Watershed.i: src/cpu/Watershed.cpp.i
+.PHONY : src/cpu/Watershed.i
+
+# target to preprocess a source file
+src/cpu/Watershed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Watershed.cpp.i
+.PHONY : src/cpu/Watershed.cpp.i
+
+src/cpu/Watershed.s: src/cpu/Watershed.cpp.s
+.PHONY : src/cpu/Watershed.s
+
+# target to generate assembly for a file
+src/cpu/Watershed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Watershed.cpp.s
+.PHONY : src/cpu/Watershed.cpp.s
+
 src/cuda/AdaptiveThreshold.o: src/cuda/AdaptiveThreshold.cu.o
 .PHONY : src/cuda/AdaptiveThreshold.o
 
@@ -658,6 +682,30 @@ src/cuda/SIFTDetector.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.s
 .PHONY : src/cuda/SIFTDetector.cu.s
 
+src/cuda/Watershed.o: src/cuda/Watershed.cu.o
+.PHONY : src/cuda/Watershed.o
+
+# target to build an object file
+src/cuda/Watershed.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.o
+.PHONY : src/cuda/Watershed.cu.o
+
+src/cuda/Watershed.i: src/cuda/Watershed.cu.i
+.PHONY : src/cuda/Watershed.i
+
+# target to preprocess a source file
+src/cuda/Watershed.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.i
+.PHONY : src/cuda/Watershed.cu.i
+
+src/cuda/Watershed.s: src/cuda/Watershed.cu.s
+.PHONY : src/cuda/Watershed.s
+
+# target to generate assembly for a file
+src/cuda/Watershed.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.s
+.PHONY : src/cuda/Watershed.cu.s
+
 src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
 .PHONY : src/factory/FilterFactory.o
 
@@ -796,6 +844,9 @@ help:
 	@echo "... src/cpu/SIFTDetector.o"
 	@echo "... src/cpu/SIFTDetector.i"
 	@echo "... src/cpu/SIFTDetector.s"
+	@echo "... src/cpu/Watershed.o"
+	@echo "... src/cpu/Watershed.i"
+	@echo "... src/cpu/Watershed.s"
 	@echo "... src/cuda/AdaptiveThreshold.o"
 	@echo "... src/cuda/AdaptiveThreshold.i"
 	@echo "... src/cuda/AdaptiveThreshold.s"
@@ -829,6 +880,9 @@ help:
 	@echo "... src/cuda/SIFTDetector.o"
 	@echo "... src/cuda/SIFTDetector.i"
 	@echo "... src/cuda/SIFTDetector.s"
+	@echo "... src/cuda/Watershed.o"
+	@echo "... src/cuda/Watershed.i"
+	@echo "... src/cuda/Watershed.s"
 	@echo "... src/factory/FilterFactory.o"
 	@echo "... src/factory/FilterFactory.i"
 	@echo "... src/factory/FilterFactory.s"

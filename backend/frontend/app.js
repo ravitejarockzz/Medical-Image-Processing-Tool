@@ -87,6 +87,10 @@ siftContrast.oninput = () => siftContrastVal.innerText = siftContrast.value;
 siftEdge.oninput = () => siftEdgeVal.innerText = siftEdge.value;
 siftSigma.oninput = () => siftSigmaVal.innerText = siftSigma.value;
 
+// Watershed sliders
+waterKSize.oninput = () => waterKSizeVal.innerText = waterKSize.value;
+waterDistRatio.oninput = () => waterDistRatioVal.innerText = waterDistRatio.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -148,6 +152,9 @@ function toggleControls() {
 
     siftControls.style.display = 
         operation.value === "sift" ? "block" : "none";
+
+    watershedControls.style.display = 
+        operation.value === "watershed" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -214,6 +221,11 @@ function processImage() {
         config.parameters.contrast_threshold = parseFloat(siftContrast.value);
         config.parameters.edge_threshold = parseFloat(siftEdge.value);
         config.parameters.sigma = parseFloat(siftSigma.value);
+    }
+
+    if (lastOperation === "watershed") {
+        config.parameters.kernel_size = parseInt(waterKSize.value);
+        config.parameters.distance_ratio = parseFloat(waterDistRatio.value);
     }
 
     const form = new FormData();

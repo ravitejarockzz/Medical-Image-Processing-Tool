@@ -16,6 +16,7 @@ set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/MedianBlur.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/OtsuThreshold.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/SIFTDetector.cpp"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Watershed.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp"
@@ -39,6 +40,7 @@ set(OLD_GLOB
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/OtsuThreshold.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/SIFTDetector.cu"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Watershed.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
