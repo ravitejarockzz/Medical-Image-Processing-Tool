@@ -226,6 +226,30 @@ src/cpu/Canny.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Canny.cpp.s
 .PHONY : src/cpu/Canny.cpp.s
 
+src/cpu/Erosion.o: src/cpu/Erosion.cpp.o
+.PHONY : src/cpu/Erosion.o
+
+# target to build an object file
+src/cpu/Erosion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Erosion.cpp.o
+.PHONY : src/cpu/Erosion.cpp.o
+
+src/cpu/Erosion.i: src/cpu/Erosion.cpp.i
+.PHONY : src/cpu/Erosion.i
+
+# target to preprocess a source file
+src/cpu/Erosion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Erosion.cpp.i
+.PHONY : src/cpu/Erosion.cpp.i
+
+src/cpu/Erosion.s: src/cpu/Erosion.cpp.s
+.PHONY : src/cpu/Erosion.s
+
+# target to generate assembly for a file
+src/cpu/Erosion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Erosion.cpp.s
+.PHONY : src/cpu/Erosion.cpp.s
+
 src/cpu/GaussianBlur.o: src/cpu/GaussianBlur.cpp.o
 .PHONY : src/cpu/GaussianBlur.o
 
@@ -513,6 +537,30 @@ src/cuda/Canny.s: src/cuda/Canny.cu.s
 src/cuda/Canny.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.s
 .PHONY : src/cuda/Canny.cu.s
+
+src/cuda/Erosion.o: src/cuda/Erosion.cu.o
+.PHONY : src/cuda/Erosion.o
+
+# target to build an object file
+src/cuda/Erosion.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.o
+.PHONY : src/cuda/Erosion.cu.o
+
+src/cuda/Erosion.i: src/cuda/Erosion.cu.i
+.PHONY : src/cuda/Erosion.i
+
+# target to preprocess a source file
+src/cuda/Erosion.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.i
+.PHONY : src/cuda/Erosion.cu.i
+
+src/cuda/Erosion.s: src/cuda/Erosion.cu.s
+.PHONY : src/cuda/Erosion.s
+
+# target to generate assembly for a file
+src/cuda/Erosion.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.s
+.PHONY : src/cuda/Erosion.cu.s
 
 src/cuda/GaussianBlur.o: src/cuda/GaussianBlur.cu.o
 .PHONY : src/cuda/GaussianBlur.o
@@ -823,6 +871,9 @@ help:
 	@echo "... src/cpu/Canny.o"
 	@echo "... src/cpu/Canny.i"
 	@echo "... src/cpu/Canny.s"
+	@echo "... src/cpu/Erosion.o"
+	@echo "... src/cpu/Erosion.i"
+	@echo "... src/cpu/Erosion.s"
 	@echo "... src/cpu/GaussianBlur.o"
 	@echo "... src/cpu/GaussianBlur.i"
 	@echo "... src/cpu/GaussianBlur.s"
@@ -859,6 +910,9 @@ help:
 	@echo "... src/cuda/Canny.o"
 	@echo "... src/cuda/Canny.i"
 	@echo "... src/cuda/Canny.s"
+	@echo "... src/cuda/Erosion.o"
+	@echo "... src/cuda/Erosion.i"
+	@echo "... src/cuda/Erosion.s"
 	@echo "... src/cuda/GaussianBlur.o"
 	@echo "... src/cuda/GaussianBlur.i"
 	@echo "... src/cuda/GaussianBlur.s"

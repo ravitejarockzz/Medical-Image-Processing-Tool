@@ -91,6 +91,10 @@ siftSigma.oninput = () => siftSigmaVal.innerText = siftSigma.value;
 waterKSize.oninput = () => waterKSizeVal.innerText = waterKSize.value;
 waterDistRatio.oninput = () => waterDistRatioVal.innerText = waterDistRatio.value;
 
+// Erosion sliders
+erosionKSize.oninput = () => erosionKSizeVal.innerText = erosionKSize.value;
+erosionIterations.oninput = () => erosionIterationsVal.innerText = erosionIterations.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -155,6 +159,9 @@ function toggleControls() {
 
     watershedControls.style.display = 
         operation.value === "watershed" ? "block" : "none";
+
+    erosionControls.style.display = 
+        operation.value === "erosion" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -226,6 +233,11 @@ function processImage() {
     if (lastOperation === "watershed") {
         config.parameters.kernel_size = parseInt(waterKSize.value);
         config.parameters.distance_ratio = parseFloat(waterDistRatio.value);
+    }
+
+    if (lastOperation === "erosion") {
+        config.parameters.kernel_size = parseInt(erosionKSize.value);
+        config.parameters.iterations = parseInt(erosionIterations.value);
     }
 
     const form = new FormData();
