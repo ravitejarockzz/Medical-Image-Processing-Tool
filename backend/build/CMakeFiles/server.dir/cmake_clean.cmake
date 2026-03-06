@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/server.dir/cmake_device_link.o"
+  "CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.o"
+  "CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o"
   "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o"
@@ -18,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/src/cpu/MedianBlur.cpp.o.d"
   "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o"
   "CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o.d"
+  "CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o"
+  "CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o.d"
   "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o"
   "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o.d"
   "CMakeFiles/server.dir/src/cuda/CLAHE.cu.o"

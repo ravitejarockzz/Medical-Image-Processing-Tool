@@ -130,6 +130,30 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+src/cpu/AdaptiveThreshold.o: src/cpu/AdaptiveThreshold.cpp.o
+.PHONY : src/cpu/AdaptiveThreshold.o
+
+# target to build an object file
+src/cpu/AdaptiveThreshold.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.o
+.PHONY : src/cpu/AdaptiveThreshold.cpp.o
+
+src/cpu/AdaptiveThreshold.i: src/cpu/AdaptiveThreshold.cpp.i
+.PHONY : src/cpu/AdaptiveThreshold.i
+
+# target to preprocess a source file
+src/cpu/AdaptiveThreshold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.i
+.PHONY : src/cpu/AdaptiveThreshold.cpp.i
+
+src/cpu/AdaptiveThreshold.s: src/cpu/AdaptiveThreshold.cpp.s
+.PHONY : src/cpu/AdaptiveThreshold.s
+
+# target to generate assembly for a file
+src/cpu/AdaptiveThreshold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.s
+.PHONY : src/cpu/AdaptiveThreshold.cpp.s
+
 src/cpu/BilateralFilter.o: src/cpu/BilateralFilter.cpp.o
 .PHONY : src/cpu/BilateralFilter.o
 
@@ -345,6 +369,30 @@ src/cpu/OtsuThreshold.s: src/cpu/OtsuThreshold.cpp.s
 src/cpu/OtsuThreshold.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.s
 .PHONY : src/cpu/OtsuThreshold.cpp.s
+
+src/cuda/AdaptiveThreshold.o: src/cuda/AdaptiveThreshold.cu.o
+.PHONY : src/cuda/AdaptiveThreshold.o
+
+# target to build an object file
+src/cuda/AdaptiveThreshold.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o
+.PHONY : src/cuda/AdaptiveThreshold.cu.o
+
+src/cuda/AdaptiveThreshold.i: src/cuda/AdaptiveThreshold.cu.i
+.PHONY : src/cuda/AdaptiveThreshold.i
+
+# target to preprocess a source file
+src/cuda/AdaptiveThreshold.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.i
+.PHONY : src/cuda/AdaptiveThreshold.cu.i
+
+src/cuda/AdaptiveThreshold.s: src/cuda/AdaptiveThreshold.cu.s
+.PHONY : src/cuda/AdaptiveThreshold.s
+
+# target to generate assembly for a file
+src/cuda/AdaptiveThreshold.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.s
+.PHONY : src/cuda/AdaptiveThreshold.cu.s
 
 src/cuda/BilateralFilter.o: src/cuda/BilateralFilter.cu.o
 .PHONY : src/cuda/BilateralFilter.o
@@ -667,6 +715,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... src/cpu/AdaptiveThreshold.o"
+	@echo "... src/cpu/AdaptiveThreshold.i"
+	@echo "... src/cpu/AdaptiveThreshold.s"
 	@echo "... src/cpu/BilateralFilter.o"
 	@echo "... src/cpu/BilateralFilter.i"
 	@echo "... src/cpu/BilateralFilter.s"
@@ -694,6 +745,9 @@ help:
 	@echo "... src/cpu/OtsuThreshold.o"
 	@echo "... src/cpu/OtsuThreshold.i"
 	@echo "... src/cpu/OtsuThreshold.s"
+	@echo "... src/cuda/AdaptiveThreshold.o"
+	@echo "... src/cuda/AdaptiveThreshold.i"
+	@echo "... src/cuda/AdaptiveThreshold.s"
 	@echo "... src/cuda/BilateralFilter.o"
 	@echo "... src/cuda/BilateralFilter.i"
 	@echo "... src/cuda/BilateralFilter.s"

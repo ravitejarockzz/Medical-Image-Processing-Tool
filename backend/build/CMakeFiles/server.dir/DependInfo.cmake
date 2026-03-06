@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/AdaptiveThreshold.cu" "CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu" "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu" "CMakeFiles/server.dir/src/cuda/CLAHE.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/CLAHE.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu" "CMakeFiles/server.dir/src/cuda/Canny.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/Canny.cu.o.d"
@@ -17,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HistogramEqualization.cu" "CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu" "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o" "gcc" "CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu" "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o" "gcc" "CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o.d"
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/AdaptiveThreshold.cpp" "CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/AdaptiveThreshold.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/BilateralFilter.cpp" "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/BilateralFilter.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/CLAHE.cpp" "CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/CLAHE.cpp.o.d"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Canny.cpp" "CMakeFiles/server.dir/src/cpu/Canny.cpp.o" "gcc" "CMakeFiles/server.dir/src/cpu/Canny.cpp.o.d"

@@ -77,6 +77,10 @@ biSigmaSpace.oninput = () => biSigmaSpaceVal.innerText = biSigmaSpace.value;
 claheClipLimit.oninput = () => claheClipLimitVal.innerText = claheClipLimit.value;
 claheTileSize.oninput = () => claheTileSizeVal.innerText = claheTileSize.value;
 
+// Adaptive threshold sliders
+adaptiveBlockSize.oninput = () => adaptiveBlockSizeVal.innerText = adaptiveBlockSize.value;
+adaptiveC.oninput = () => adaptiveCVal.innerText = adaptiveC.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -132,6 +136,9 @@ function toggleControls() {
 
     otsuControls.style.display = 
         operation.value === "otsu_threshold" ? "block" : "none";
+
+    adaptiveControls.style.display = 
+        operation.value === "adaptive_threshold" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -186,6 +193,11 @@ function processImage() {
     if (lastOperation === "clahe") {
         config.parameters.clip_limit = parseFloat(claheClipLimit.value);
         config.parameters.tile_grid_size = parseInt(claheTileSize.value);
+    }
+
+    if (lastOperation === "adaptive_threshold") {
+        config.parameters.block_size = parseInt(adaptiveBlockSize.value);
+        config.parameters.c = parseFloat(adaptiveC.value); 
     }
 
     const form = new FormData();

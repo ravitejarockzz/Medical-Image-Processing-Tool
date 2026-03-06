@@ -108,6 +108,16 @@
                 <i><b>Automatic Binarization</b><br>Otsu's algorithm calculates the optimal threshold mathematically. No parameters required.</i>
             </div>
 
+            <div id="adaptiveControls" class="controlBox" style="display: none;">
+                Block Size (Odd)
+                <input type="range" id="adaptiveBlockSize" min="3" max="99" step="2" value="11">
+                <span id="adaptiveBlockSizeVal">11</span><br>
+                
+                Constant (C)
+                <input type="range" id="adaptiveC" min="-10" max="30" step="1" value="2">
+                <span id="adaptiveCVal">2</span>
+            </div>
+
         </div>
 
         <div class="buttons">

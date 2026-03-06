@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # CPU_SOURCES at CMakeLists.txt:32 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cpp")
 set(OLD_GLOB
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/AdaptiveThreshold.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/BilateralFilter.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/CLAHE.cpp"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Canny.cpp"
@@ -27,6 +28,7 @@ endif()
 # CUDA_SOURCES at CMakeLists.txt:37 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cu")
 set(OLD_GLOB
+  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/AdaptiveThreshold.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu"
   "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu"
