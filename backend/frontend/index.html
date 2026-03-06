@@ -118,6 +118,24 @@
                 <span id="adaptiveCVal">2</span>
             </div>
 
+            <div id="siftControls" class="controlBox" style="display: none;">
+                Max Features
+                <input type="range" id="siftFeatures" min="0" max="2000" step="50" value="500">
+                <span id="siftFeaturesVal">500</span><br>
+                
+                Contrast Threshold
+                <input type="range" id="siftContrast" min="0.01" max="0.20" step="0.01" value="0.04">
+                <span id="siftContrastVal">0.04</span><br>
+
+                Edge Threshold
+                <input type="range" id="siftEdge" min="5" max="50" step="1" value="10">
+                <span id="siftEdgeVal">10</span><br>
+
+                Sigma
+                <input type="range" id="siftSigma" min="0.5" max="3.0" step="0.1" value="1.6">
+                <span id="siftSigmaVal">1.6</span>
+            </div>
+
         </div>
 
         <div class="buttons">

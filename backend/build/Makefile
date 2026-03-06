@@ -370,6 +370,30 @@ src/cpu/OtsuThreshold.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.s
 .PHONY : src/cpu/OtsuThreshold.cpp.s
 
+src/cpu/SIFTDetector.o: src/cpu/SIFTDetector.cpp.o
+.PHONY : src/cpu/SIFTDetector.o
+
+# target to build an object file
+src/cpu/SIFTDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.o
+.PHONY : src/cpu/SIFTDetector.cpp.o
+
+src/cpu/SIFTDetector.i: src/cpu/SIFTDetector.cpp.i
+.PHONY : src/cpu/SIFTDetector.i
+
+# target to preprocess a source file
+src/cpu/SIFTDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.i
+.PHONY : src/cpu/SIFTDetector.cpp.i
+
+src/cpu/SIFTDetector.s: src/cpu/SIFTDetector.cpp.s
+.PHONY : src/cpu/SIFTDetector.s
+
+# target to generate assembly for a file
+src/cpu/SIFTDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/SIFTDetector.cpp.s
+.PHONY : src/cpu/SIFTDetector.cpp.s
+
 src/cuda/AdaptiveThreshold.o: src/cuda/AdaptiveThreshold.cu.o
 .PHONY : src/cuda/AdaptiveThreshold.o
 
@@ -586,29 +610,53 @@ src/cuda/MedianBlur.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.s
 .PHONY : src/cuda/MedianBlur.cu.s
 
-src/cuda/OtsuThreshold.o: src/cuda/OtsuThreshold.cpp.o
+src/cuda/OtsuThreshold.o: src/cuda/OtsuThreshold.cu.o
 .PHONY : src/cuda/OtsuThreshold.o
 
 # target to build an object file
-src/cuda/OtsuThreshold.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.o
-.PHONY : src/cuda/OtsuThreshold.cpp.o
+src/cuda/OtsuThreshold.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o
+.PHONY : src/cuda/OtsuThreshold.cu.o
 
-src/cuda/OtsuThreshold.i: src/cuda/OtsuThreshold.cpp.i
+src/cuda/OtsuThreshold.i: src/cuda/OtsuThreshold.cu.i
 .PHONY : src/cuda/OtsuThreshold.i
 
 # target to preprocess a source file
-src/cuda/OtsuThreshold.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.i
-.PHONY : src/cuda/OtsuThreshold.cpp.i
+src/cuda/OtsuThreshold.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.i
+.PHONY : src/cuda/OtsuThreshold.cu.i
 
-src/cuda/OtsuThreshold.s: src/cuda/OtsuThreshold.cpp.s
+src/cuda/OtsuThreshold.s: src/cuda/OtsuThreshold.cu.s
 .PHONY : src/cuda/OtsuThreshold.s
 
 # target to generate assembly for a file
-src/cuda/OtsuThreshold.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cpp.s
-.PHONY : src/cuda/OtsuThreshold.cpp.s
+src/cuda/OtsuThreshold.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.s
+.PHONY : src/cuda/OtsuThreshold.cu.s
+
+src/cuda/SIFTDetector.o: src/cuda/SIFTDetector.cu.o
+.PHONY : src/cuda/SIFTDetector.o
+
+# target to build an object file
+src/cuda/SIFTDetector.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o
+.PHONY : src/cuda/SIFTDetector.cu.o
+
+src/cuda/SIFTDetector.i: src/cuda/SIFTDetector.cu.i
+.PHONY : src/cuda/SIFTDetector.i
+
+# target to preprocess a source file
+src/cuda/SIFTDetector.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.i
+.PHONY : src/cuda/SIFTDetector.cu.i
+
+src/cuda/SIFTDetector.s: src/cuda/SIFTDetector.cu.s
+.PHONY : src/cuda/SIFTDetector.s
+
+# target to generate assembly for a file
+src/cuda/SIFTDetector.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.s
+.PHONY : src/cuda/SIFTDetector.cu.s
 
 src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
 .PHONY : src/factory/FilterFactory.o
@@ -745,6 +793,9 @@ help:
 	@echo "... src/cpu/OtsuThreshold.o"
 	@echo "... src/cpu/OtsuThreshold.i"
 	@echo "... src/cpu/OtsuThreshold.s"
+	@echo "... src/cpu/SIFTDetector.o"
+	@echo "... src/cpu/SIFTDetector.i"
+	@echo "... src/cpu/SIFTDetector.s"
 	@echo "... src/cuda/AdaptiveThreshold.o"
 	@echo "... src/cuda/AdaptiveThreshold.i"
 	@echo "... src/cuda/AdaptiveThreshold.s"
@@ -775,6 +826,9 @@ help:
 	@echo "... src/cuda/OtsuThreshold.o"
 	@echo "... src/cuda/OtsuThreshold.i"
 	@echo "... src/cuda/OtsuThreshold.s"
+	@echo "... src/cuda/SIFTDetector.o"
+	@echo "... src/cuda/SIFTDetector.i"
+	@echo "... src/cuda/SIFTDetector.s"
 	@echo "... src/factory/FilterFactory.o"
 	@echo "... src/factory/FilterFactory.i"
 	@echo "... src/factory/FilterFactory.s"

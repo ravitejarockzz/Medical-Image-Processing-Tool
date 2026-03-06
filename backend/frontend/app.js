@@ -81,6 +81,12 @@ claheTileSize.oninput = () => claheTileSizeVal.innerText = claheTileSize.value;
 adaptiveBlockSize.oninput = () => adaptiveBlockSizeVal.innerText = adaptiveBlockSize.value;
 adaptiveC.oninput = () => adaptiveCVal.innerText = adaptiveC.value;
 
+// SIFT sliders
+siftFeatures.oninput = () => siftFeaturesVal.innerText = siftFeatures.value;
+siftContrast.oninput = () => siftContrastVal.innerText = siftContrast.value;
+siftEdge.oninput = () => siftEdgeVal.innerText = siftEdge.value;
+siftSigma.oninput = () => siftSigmaVal.innerText = siftSigma.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -139,6 +145,9 @@ function toggleControls() {
 
     adaptiveControls.style.display = 
         operation.value === "adaptive_threshold" ? "block" : "none";
+
+    siftControls.style.display = 
+        operation.value === "sift" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -198,6 +207,13 @@ function processImage() {
     if (lastOperation === "adaptive_threshold") {
         config.parameters.block_size = parseInt(adaptiveBlockSize.value);
         config.parameters.c = parseFloat(adaptiveC.value); 
+    }
+
+    if (lastOperation === "sift") {
+        config.parameters.nfeatures = parseInt(siftFeatures.value);
+        config.parameters.contrast_threshold = parseFloat(siftContrast.value);
+        config.parameters.edge_threshold = parseFloat(siftEdge.value);
+        config.parameters.sigma = parseFloat(siftSigma.value);
     }
 
     const form = new FormData();
