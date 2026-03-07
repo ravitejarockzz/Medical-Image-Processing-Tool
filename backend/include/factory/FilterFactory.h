@@ -22,10 +22,8 @@ public:
     void registerCUDA(const std::string& name, Creator creator);
 
     // Create filter by name + mode
-    std::unique_ptr<IFilter> create(
-        const std::string& name,
-        const std::string& mode
-    );
+    std::unique_ptr<IFilter> createCPU(const std::string& name);
+    std::unique_ptr<IFilter> createCUDA(const std::string& name);
 
     // List available operations
     std::vector<std::string> getAvailableCPU() const;

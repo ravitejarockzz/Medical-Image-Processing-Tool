@@ -9,33 +9,23 @@ let processedReady = false;
 // Load operations
 // ----------------------
 
+let cpuOperations = [];
+let gpuOperations = [];
+
 fetch("/operations")
   .then(res => res.json())
   .then(data => {
 
-    // --------------------
-    // Populate operations
-    // --------------------
-    const opSelect = document.getElementById("operation");
-    data.available_operations.forEach(op => {
-        const option = document.createElement("option");
-        option.value = op;
-        option.text = op;
-        opSelect.appendChild(option);
-    });
+    cpuOperations = data.cpu_operations;
+    gpuOperations = data.gpu_operations;
 
-    // --------------------
-    // Populate processor mode
-    // --------------------
     const modeSelect = document.getElementById("processorMode");
 
-    // Always add CPU
     const cpuOption = document.createElement("option");
     cpuOption.value = "cpu";
     cpuOption.text = "CPU";
     modeSelect.appendChild(cpuOption);
 
-    // Add CUDA only if available
     if (data.gpu_available) {
         const gpuOption = document.createElement("option");
         gpuOption.value = "cuda";
@@ -43,9 +33,31 @@ fetch("/operations")
         modeSelect.appendChild(gpuOption);
     }
 
-    opSelect.addEventListener("change", toggleControls);
-    toggleControls();
+    updateOperations();
+
+    modeSelect.addEventListener("change", updateOperations);
 });
+
+function updateOperations() {
+
+    const opSelect = document.getElementById("operation");
+    opSelect.innerHTML = "";
+
+    const mode = document.getElementById("processorMode").value;
+
+    const ops = mode === "cuda" ? gpuOperations : cpuOperations;
+
+    ops.forEach(op => {
+
+        const option = document.createElement("option");
+        option.value = op;
+        option.text = op;
+
+        opSelect.appendChild(option);
+    });
+
+    toggleControls();
+}
 
 
 // ----------------------
@@ -94,6 +106,10 @@ waterDistRatio.oninput = () => waterDistRatioVal.innerText = waterDistRatio.valu
 // Erosion sliders
 erosionKSize.oninput = () => erosionKSizeVal.innerText = erosionKSize.value;
 erosionIterations.oninput = () => erosionIterationsVal.innerText = erosionIterations.value;
+
+// Dilation sliders
+dilationKSize.oninput = () => dilationKSizeVal.innerText = dilationKSize.value;
+dilationIterations.oninput = () => dilationIterationsVal.innerText = dilationIterations.value;
 
 // ----------------------
 // Preview on select (NEW)
@@ -162,6 +178,9 @@ function toggleControls() {
 
     erosionControls.style.display = 
         operation.value === "erosion" ? "block" : "none";
+
+    dilationControls.style.display =
+        operation.value === "dilation" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -238,6 +257,11 @@ function processImage() {
     if (lastOperation === "erosion") {
         config.parameters.kernel_size = parseInt(erosionKSize.value);
         config.parameters.iterations = parseInt(erosionIterations.value);
+    }
+
+    if (lastOperation === "dilation") { 
+        config.parameters.kernel_size = parseInt(dilationKSize.value);
+        config.parameters.iterations = parseInt(dilationIterations.value);
     }
 
     const form = new FormData();

@@ -13,7 +13,7 @@ cv::Mat CUDAProcessor::process(
     }
 
     // Create filter from CUDA registry
-    auto filter = FilterFactory::instance().create(operation, "cuda");
+    auto filter = FilterFactory::instance().createCUDA(operation);
 
     if (!filter) {
         throw std::runtime_error("Failed to create CUDA filter: " + operation);

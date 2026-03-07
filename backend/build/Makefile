@@ -226,6 +226,30 @@ src/cpu/Canny.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Canny.cpp.s
 .PHONY : src/cpu/Canny.cpp.s
 
+src/cpu/Dilation.o: src/cpu/Dilation.cpp.o
+.PHONY : src/cpu/Dilation.o
+
+# target to build an object file
+src/cpu/Dilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Dilation.cpp.o
+.PHONY : src/cpu/Dilation.cpp.o
+
+src/cpu/Dilation.i: src/cpu/Dilation.cpp.i
+.PHONY : src/cpu/Dilation.i
+
+# target to preprocess a source file
+src/cpu/Dilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Dilation.cpp.i
+.PHONY : src/cpu/Dilation.cpp.i
+
+src/cpu/Dilation.s: src/cpu/Dilation.cpp.s
+.PHONY : src/cpu/Dilation.s
+
+# target to generate assembly for a file
+src/cpu/Dilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Dilation.cpp.s
+.PHONY : src/cpu/Dilation.cpp.s
+
 src/cpu/Erosion.o: src/cpu/Erosion.cpp.o
 .PHONY : src/cpu/Erosion.o
 
@@ -537,6 +561,30 @@ src/cuda/Canny.s: src/cuda/Canny.cu.s
 src/cuda/Canny.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.s
 .PHONY : src/cuda/Canny.cu.s
+
+src/cuda/Dilation.o: src/cuda/Dilation.cu.o
+.PHONY : src/cuda/Dilation.o
+
+# target to build an object file
+src/cuda/Dilation.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.o
+.PHONY : src/cuda/Dilation.cu.o
+
+src/cuda/Dilation.i: src/cuda/Dilation.cu.i
+.PHONY : src/cuda/Dilation.i
+
+# target to preprocess a source file
+src/cuda/Dilation.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.i
+.PHONY : src/cuda/Dilation.cu.i
+
+src/cuda/Dilation.s: src/cuda/Dilation.cu.s
+.PHONY : src/cuda/Dilation.s
+
+# target to generate assembly for a file
+src/cuda/Dilation.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.s
+.PHONY : src/cuda/Dilation.cu.s
 
 src/cuda/Erosion.o: src/cuda/Erosion.cu.o
 .PHONY : src/cuda/Erosion.o
@@ -871,6 +919,9 @@ help:
 	@echo "... src/cpu/Canny.o"
 	@echo "... src/cpu/Canny.i"
 	@echo "... src/cpu/Canny.s"
+	@echo "... src/cpu/Dilation.o"
+	@echo "... src/cpu/Dilation.i"
+	@echo "... src/cpu/Dilation.s"
 	@echo "... src/cpu/Erosion.o"
 	@echo "... src/cpu/Erosion.i"
 	@echo "... src/cpu/Erosion.s"
@@ -910,6 +961,9 @@ help:
 	@echo "... src/cuda/Canny.o"
 	@echo "... src/cuda/Canny.i"
 	@echo "... src/cuda/Canny.s"
+	@echo "... src/cuda/Dilation.o"
+	@echo "... src/cuda/Dilation.i"
+	@echo "... src/cuda/Dilation.s"
 	@echo "... src/cuda/Erosion.o"
 	@echo "... src/cuda/Erosion.i"
 	@echo "... src/cuda/Erosion.s"

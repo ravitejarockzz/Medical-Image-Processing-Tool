@@ -72,7 +72,8 @@ int main() {
         auto& factory = FilterFactory::instance();
 
         json response;
-        response["available_operations"] = factory.getAvailableCPU();
+        response["cpu_operations"] = factory.getAvailableCPU();
+        response["gpu_operations"] = factory.getAvailableCUDA();
         response["gpu_available"] = gpuAvailable;
 
         crow::response res;

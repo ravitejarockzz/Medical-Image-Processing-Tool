@@ -13,7 +13,7 @@ cv::Mat CPUProcessor::process(
     }
 
     // Create filter from factory
-    auto filter = FilterFactory::instance().create(operation, "cpu");
+    auto filter = FilterFactory::instance().createCPU(operation);
 
     if (!filter) {
         throw std::runtime_error("Failed to create CPU filter: " + operation);

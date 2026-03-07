@@ -33,25 +33,28 @@ void FilterFactory::registerCUDA(
 // Create Filter
 // -----------------------------
 
-std::unique_ptr<IFilter> FilterFactory::create(
-    const std::string& name,
-    const std::string& mode
+std::unique_ptr<IFilter> FilterFactory::createCPU(
+    const std::string& name
 ) {
-    if (mode == "cpu") {
         auto it = cpuRegistry.find(name);
         if (it != cpuRegistry.end()) {
             return it->second();
         }
-    }
-    else if (mode == "cuda") {
+    throw std::runtime_error(
+        "Filter not found: " + name + " (mode: cpu)"
+    );
+}
+
+std::unique_ptr<IFilter> FilterFactory::createCUDA(
+    const std::string& name
+) {
         auto it = cudaRegistry.find(name);
         if (it != cudaRegistry.end()) {
             return it->second();
         }
-    }
 
     throw std::runtime_error(
-        "Filter not found: " + name + " (mode: " + mode + ")"
+        "Filter not found: " + name + " (mode: cuda)"
     );
 }
 
