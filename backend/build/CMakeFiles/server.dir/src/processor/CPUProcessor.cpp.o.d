@@ -1,8 +1,8 @@
 CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o: \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/processor/CPUProcessor.cpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/processor/CPUProcessor.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/CPUProcessor.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/ImageProcessor.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/processor/CPUProcessor.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/processor/ImageProcessor.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -349,5 +349,5 @@ CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/factory/FilterFactory.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/core/IFilter.h

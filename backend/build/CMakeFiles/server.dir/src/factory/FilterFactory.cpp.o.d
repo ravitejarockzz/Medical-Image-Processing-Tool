@@ -1,7 +1,7 @@
 CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o: \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/factory/FilterFactory.cpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/factory/FilterFactory.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/factory/FilterFactory.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -163,7 +163,7 @@ CMakeFiles/server.dir/src/factory/FilterFactory.cpp.o: \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/core/IFilter.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

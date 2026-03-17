@@ -1,8 +1,8 @@
 CMakeFiles/server.dir/src/main.cpp.o: \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/main.cpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/query_string.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/query_string.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -180,7 +180,7 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_parser_merged.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/http_parser_merged.h \
  /usr/include/assert.h /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -189,8 +189,8 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/common.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/utility.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/common.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/utility.h \
  /usr/include/c++/11/cstring /usr/include/c++/11/functional \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -228,7 +228,7 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/settings.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/settings.h \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
@@ -241,9 +241,9 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/ci_map.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/TinySHA1.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/socket_adaptors.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/ci_map.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/TinySHA1.hpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/socket_adaptors.h \
  /usr/include/asio.hpp /usr/include/asio/associated_allocator.hpp \
  /usr/include/asio/detail/config.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -801,44 +801,44 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/asio/windows/stream_handle.hpp /usr/include/asio/write.hpp \
  /usr/include/asio/write_at.hpp /usr/include/asio/impl/write_at.hpp \
  /usr/include/asio/version.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/socket_acceptors.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/logging.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/json.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/socket_acceptors.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/logging.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/json.h \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/returnable.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/mustache.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/returnable.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/mustache.h \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/task_timer.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/task_timer.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_request.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/websocket.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/http_request.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/websocket.h \
  /usr/include/c++/11/optional /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_response.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/mime_types.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/TinySHA1.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/parser.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/multipart.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/exceptions.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/multipart_view.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/http_response.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/mime_types.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/TinySHA1.hpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/parser.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/multipart.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/exceptions.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/multipart_view.h \
  /usr/include/c++/11/charconv \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/routing.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/middleware.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/middleware_context.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/compression.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_connection.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/compression.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/http_server.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/version.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/../Crow/include/crow/app.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/CPUProcessor.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/ImageProcessor.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/routing.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/middleware.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/middleware_context.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/compression.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/http_connection.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/compression.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/http_server.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/version.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/../crow/include/crow/app.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/processor/CPUProcessor.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/processor/ImageProcessor.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -957,26 +957,10 @@ CMakeFiles/server.dir/src/main.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/processor/CUDAProcessor.h \
- /usr/local/cuda/include/cuda_runtime.h \
- /usr/local/cuda/include/crt/host_config.h \
- /usr/local/cuda/include/builtin_types.h \
- /usr/local/cuda/include/device_types.h \
- /usr/local/cuda/include/crt/host_defines.h \
- /usr/local/cuda/include/driver_types.h \
- /usr/local/cuda/include/vector_types.h \
- /usr/local/cuda/include/surface_types.h \
- /usr/local/cuda/include/texture_types.h \
- /usr/local/cuda/include/library_types.h \
- /usr/local/cuda/include/channel_descriptor.h \
- /usr/local/cuda/include/cuda_runtime_api.h \
- /usr/local/cuda/include/cuda_device_runtime_api.h \
- /usr/local/cuda/include/driver_functions.h \
- /usr/local/cuda/include/vector_functions.h \
- /usr/local/cuda/include/vector_functions.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/thirdparty/json.hpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/processor/CUDAProcessor.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/factory/FilterFactory.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/core/IFilter.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/thirdparty/json.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/valarray \
  /usr/include/c++/11/bits/valarray_array.h \

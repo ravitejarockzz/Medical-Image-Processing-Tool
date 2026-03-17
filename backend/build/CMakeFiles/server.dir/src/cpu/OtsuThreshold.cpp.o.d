@@ -1,8 +1,8 @@
 CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o: \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/src/cpu/OtsuThreshold.cpp \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/OtsuThreshold.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/cpu/OtsuThreshold.h \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/core/IFilter.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/cpu/OtsuThreshold.h \
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/core/IFilter.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -349,4 +349,4 @@ CMakeFiles/server.dir/src/cpu/OtsuThreshold.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /mnt/d/Sai\ Satish/Image\ Processing/project3/backend/include/factory/FilterFactory.h
+ /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/include/factory/FilterFactory.h

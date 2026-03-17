@@ -3,51 +3,27 @@
 cmake_policy(SET CMP0009 NEW)
 
 # CPU_SOURCES at CMakeLists.txt:32 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/*.cpp")
 set(OLD_GLOB
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/AdaptiveThreshold.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/BilateralFilter.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/CLAHE.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Canny.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Dilation.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Erosion.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GaussianBlur.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/GrayScale.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HarrisCorner.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/HistogramEqualization.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/MedianBlur.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/OtsuThreshold.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/SIFTDetector.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cpu/Watershed.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/factory/FilterFactory.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/main.cpp"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CPUProcessor.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/AdaptiveThreshold.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/BilateralFilter.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/CLAHE.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/Canny.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/Dilation.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/Erosion.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/GaussianBlur.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/GrayScale.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/HarrisCorner.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/HistogramEqualization.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/MedianBlur.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/OtsuThreshold.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/SIFTDetector.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/cpu/Watershed.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/factory/FilterFactory.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/main.cpp"
+  "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/src/processor/CPUProcessor.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/cmake.verify_globs")
-endif()
-
-# CUDA_SOURCES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/d/Sai Satish/Image Processing/project3/backend/src/*.cu")
-set(OLD_GLOB
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/AdaptiveThreshold.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/BilateralFilter.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/CLAHE.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Canny.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Dilation.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Erosion.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GaussianBlur.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/GrayScale.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HarrisCorner.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/HistogramEqualization.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/MedianBlur.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/OtsuThreshold.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/SIFTDetector.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/cuda/Watershed.cu"
-  "/mnt/d/Sai Satish/Image Processing/project3/backend/src/processor/CUDAProcessor.cu"
-  )
-if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
-  message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/cmake.verify_globs")
 endif()

@@ -155,6 +155,7 @@ git submodule update --init --recursive
 - C++17 compatible compiler
 - CMake (>= 3.10)
 - OpenCV (C++ version)
+- ASIO (Asynchronous I/O) (C++ library)
 - CUDA Toolkit (if using GPU)
 - NVIDIA GPU (for CUDA execution)
 
@@ -164,6 +165,9 @@ Install dependencies:
 sudo apt update
 sudo apt install build-essential cmake
 sudo apt install libopencv-dev
+
+sudo apt update
+sudo apt install libasio-dev
 ```
 
 If using CUDA:

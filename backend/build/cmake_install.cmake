@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Sai Satish/Image Processing/project3/backend
+# Install script for directory: /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Sai Satish/Image Processing/project3/backend/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

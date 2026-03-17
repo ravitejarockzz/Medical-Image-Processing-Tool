@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/Sai Satish/Image Processing/project3/backend"
+CMAKE_SOURCE_DIR = /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/Sai Satish/Image Processing/project3/backend/build"
+CMAKE_BINARY_DIR = /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" "/mnt/d/Sai Satish/Image Processing/project3/backend/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/VerifyGlobs.cmake"
+	$(CMAKE_COMMAND) -P /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -466,342 +466,6 @@ src/cpu/Watershed.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cpu/Watershed.cpp.s
 .PHONY : src/cpu/Watershed.cpp.s
 
-src/cuda/AdaptiveThreshold.o: src/cuda/AdaptiveThreshold.cu.o
-.PHONY : src/cuda/AdaptiveThreshold.o
-
-# target to build an object file
-src/cuda/AdaptiveThreshold.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.o
-.PHONY : src/cuda/AdaptiveThreshold.cu.o
-
-src/cuda/AdaptiveThreshold.i: src/cuda/AdaptiveThreshold.cu.i
-.PHONY : src/cuda/AdaptiveThreshold.i
-
-# target to preprocess a source file
-src/cuda/AdaptiveThreshold.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.i
-.PHONY : src/cuda/AdaptiveThreshold.cu.i
-
-src/cuda/AdaptiveThreshold.s: src/cuda/AdaptiveThreshold.cu.s
-.PHONY : src/cuda/AdaptiveThreshold.s
-
-# target to generate assembly for a file
-src/cuda/AdaptiveThreshold.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/AdaptiveThreshold.cu.s
-.PHONY : src/cuda/AdaptiveThreshold.cu.s
-
-src/cuda/BilateralFilter.o: src/cuda/BilateralFilter.cu.o
-.PHONY : src/cuda/BilateralFilter.o
-
-# target to build an object file
-src/cuda/BilateralFilter.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.o
-.PHONY : src/cuda/BilateralFilter.cu.o
-
-src/cuda/BilateralFilter.i: src/cuda/BilateralFilter.cu.i
-.PHONY : src/cuda/BilateralFilter.i
-
-# target to preprocess a source file
-src/cuda/BilateralFilter.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.i
-.PHONY : src/cuda/BilateralFilter.cu.i
-
-src/cuda/BilateralFilter.s: src/cuda/BilateralFilter.cu.s
-.PHONY : src/cuda/BilateralFilter.s
-
-# target to generate assembly for a file
-src/cuda/BilateralFilter.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/BilateralFilter.cu.s
-.PHONY : src/cuda/BilateralFilter.cu.s
-
-src/cuda/CLAHE.o: src/cuda/CLAHE.cu.o
-.PHONY : src/cuda/CLAHE.o
-
-# target to build an object file
-src/cuda/CLAHE.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.o
-.PHONY : src/cuda/CLAHE.cu.o
-
-src/cuda/CLAHE.i: src/cuda/CLAHE.cu.i
-.PHONY : src/cuda/CLAHE.i
-
-# target to preprocess a source file
-src/cuda/CLAHE.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.i
-.PHONY : src/cuda/CLAHE.cu.i
-
-src/cuda/CLAHE.s: src/cuda/CLAHE.cu.s
-.PHONY : src/cuda/CLAHE.s
-
-# target to generate assembly for a file
-src/cuda/CLAHE.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/CLAHE.cu.s
-.PHONY : src/cuda/CLAHE.cu.s
-
-src/cuda/Canny.o: src/cuda/Canny.cu.o
-.PHONY : src/cuda/Canny.o
-
-# target to build an object file
-src/cuda/Canny.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.o
-.PHONY : src/cuda/Canny.cu.o
-
-src/cuda/Canny.i: src/cuda/Canny.cu.i
-.PHONY : src/cuda/Canny.i
-
-# target to preprocess a source file
-src/cuda/Canny.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.i
-.PHONY : src/cuda/Canny.cu.i
-
-src/cuda/Canny.s: src/cuda/Canny.cu.s
-.PHONY : src/cuda/Canny.s
-
-# target to generate assembly for a file
-src/cuda/Canny.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Canny.cu.s
-.PHONY : src/cuda/Canny.cu.s
-
-src/cuda/Dilation.o: src/cuda/Dilation.cu.o
-.PHONY : src/cuda/Dilation.o
-
-# target to build an object file
-src/cuda/Dilation.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.o
-.PHONY : src/cuda/Dilation.cu.o
-
-src/cuda/Dilation.i: src/cuda/Dilation.cu.i
-.PHONY : src/cuda/Dilation.i
-
-# target to preprocess a source file
-src/cuda/Dilation.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.i
-.PHONY : src/cuda/Dilation.cu.i
-
-src/cuda/Dilation.s: src/cuda/Dilation.cu.s
-.PHONY : src/cuda/Dilation.s
-
-# target to generate assembly for a file
-src/cuda/Dilation.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Dilation.cu.s
-.PHONY : src/cuda/Dilation.cu.s
-
-src/cuda/Erosion.o: src/cuda/Erosion.cu.o
-.PHONY : src/cuda/Erosion.o
-
-# target to build an object file
-src/cuda/Erosion.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.o
-.PHONY : src/cuda/Erosion.cu.o
-
-src/cuda/Erosion.i: src/cuda/Erosion.cu.i
-.PHONY : src/cuda/Erosion.i
-
-# target to preprocess a source file
-src/cuda/Erosion.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.i
-.PHONY : src/cuda/Erosion.cu.i
-
-src/cuda/Erosion.s: src/cuda/Erosion.cu.s
-.PHONY : src/cuda/Erosion.s
-
-# target to generate assembly for a file
-src/cuda/Erosion.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Erosion.cu.s
-.PHONY : src/cuda/Erosion.cu.s
-
-src/cuda/GaussianBlur.o: src/cuda/GaussianBlur.cu.o
-.PHONY : src/cuda/GaussianBlur.o
-
-# target to build an object file
-src/cuda/GaussianBlur.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.o
-.PHONY : src/cuda/GaussianBlur.cu.o
-
-src/cuda/GaussianBlur.i: src/cuda/GaussianBlur.cu.i
-.PHONY : src/cuda/GaussianBlur.i
-
-# target to preprocess a source file
-src/cuda/GaussianBlur.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.i
-.PHONY : src/cuda/GaussianBlur.cu.i
-
-src/cuda/GaussianBlur.s: src/cuda/GaussianBlur.cu.s
-.PHONY : src/cuda/GaussianBlur.s
-
-# target to generate assembly for a file
-src/cuda/GaussianBlur.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GaussianBlur.cu.s
-.PHONY : src/cuda/GaussianBlur.cu.s
-
-src/cuda/GrayScale.o: src/cuda/GrayScale.cu.o
-.PHONY : src/cuda/GrayScale.o
-
-# target to build an object file
-src/cuda/GrayScale.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.o
-.PHONY : src/cuda/GrayScale.cu.o
-
-src/cuda/GrayScale.i: src/cuda/GrayScale.cu.i
-.PHONY : src/cuda/GrayScale.i
-
-# target to preprocess a source file
-src/cuda/GrayScale.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.i
-.PHONY : src/cuda/GrayScale.cu.i
-
-src/cuda/GrayScale.s: src/cuda/GrayScale.cu.s
-.PHONY : src/cuda/GrayScale.s
-
-# target to generate assembly for a file
-src/cuda/GrayScale.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/GrayScale.cu.s
-.PHONY : src/cuda/GrayScale.cu.s
-
-src/cuda/HarrisCorner.o: src/cuda/HarrisCorner.cu.o
-.PHONY : src/cuda/HarrisCorner.o
-
-# target to build an object file
-src/cuda/HarrisCorner.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.o
-.PHONY : src/cuda/HarrisCorner.cu.o
-
-src/cuda/HarrisCorner.i: src/cuda/HarrisCorner.cu.i
-.PHONY : src/cuda/HarrisCorner.i
-
-# target to preprocess a source file
-src/cuda/HarrisCorner.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.i
-.PHONY : src/cuda/HarrisCorner.cu.i
-
-src/cuda/HarrisCorner.s: src/cuda/HarrisCorner.cu.s
-.PHONY : src/cuda/HarrisCorner.s
-
-# target to generate assembly for a file
-src/cuda/HarrisCorner.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HarrisCorner.cu.s
-.PHONY : src/cuda/HarrisCorner.cu.s
-
-src/cuda/HistogramEqualization.o: src/cuda/HistogramEqualization.cu.o
-.PHONY : src/cuda/HistogramEqualization.o
-
-# target to build an object file
-src/cuda/HistogramEqualization.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.o
-.PHONY : src/cuda/HistogramEqualization.cu.o
-
-src/cuda/HistogramEqualization.i: src/cuda/HistogramEqualization.cu.i
-.PHONY : src/cuda/HistogramEqualization.i
-
-# target to preprocess a source file
-src/cuda/HistogramEqualization.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.i
-.PHONY : src/cuda/HistogramEqualization.cu.i
-
-src/cuda/HistogramEqualization.s: src/cuda/HistogramEqualization.cu.s
-.PHONY : src/cuda/HistogramEqualization.s
-
-# target to generate assembly for a file
-src/cuda/HistogramEqualization.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/HistogramEqualization.cu.s
-.PHONY : src/cuda/HistogramEqualization.cu.s
-
-src/cuda/MedianBlur.o: src/cuda/MedianBlur.cu.o
-.PHONY : src/cuda/MedianBlur.o
-
-# target to build an object file
-src/cuda/MedianBlur.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.o
-.PHONY : src/cuda/MedianBlur.cu.o
-
-src/cuda/MedianBlur.i: src/cuda/MedianBlur.cu.i
-.PHONY : src/cuda/MedianBlur.i
-
-# target to preprocess a source file
-src/cuda/MedianBlur.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.i
-.PHONY : src/cuda/MedianBlur.cu.i
-
-src/cuda/MedianBlur.s: src/cuda/MedianBlur.cu.s
-.PHONY : src/cuda/MedianBlur.s
-
-# target to generate assembly for a file
-src/cuda/MedianBlur.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/MedianBlur.cu.s
-.PHONY : src/cuda/MedianBlur.cu.s
-
-src/cuda/OtsuThreshold.o: src/cuda/OtsuThreshold.cu.o
-.PHONY : src/cuda/OtsuThreshold.o
-
-# target to build an object file
-src/cuda/OtsuThreshold.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.o
-.PHONY : src/cuda/OtsuThreshold.cu.o
-
-src/cuda/OtsuThreshold.i: src/cuda/OtsuThreshold.cu.i
-.PHONY : src/cuda/OtsuThreshold.i
-
-# target to preprocess a source file
-src/cuda/OtsuThreshold.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.i
-.PHONY : src/cuda/OtsuThreshold.cu.i
-
-src/cuda/OtsuThreshold.s: src/cuda/OtsuThreshold.cu.s
-.PHONY : src/cuda/OtsuThreshold.s
-
-# target to generate assembly for a file
-src/cuda/OtsuThreshold.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/OtsuThreshold.cu.s
-.PHONY : src/cuda/OtsuThreshold.cu.s
-
-src/cuda/SIFTDetector.o: src/cuda/SIFTDetector.cu.o
-.PHONY : src/cuda/SIFTDetector.o
-
-# target to build an object file
-src/cuda/SIFTDetector.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.o
-.PHONY : src/cuda/SIFTDetector.cu.o
-
-src/cuda/SIFTDetector.i: src/cuda/SIFTDetector.cu.i
-.PHONY : src/cuda/SIFTDetector.i
-
-# target to preprocess a source file
-src/cuda/SIFTDetector.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.i
-.PHONY : src/cuda/SIFTDetector.cu.i
-
-src/cuda/SIFTDetector.s: src/cuda/SIFTDetector.cu.s
-.PHONY : src/cuda/SIFTDetector.s
-
-# target to generate assembly for a file
-src/cuda/SIFTDetector.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/SIFTDetector.cu.s
-.PHONY : src/cuda/SIFTDetector.cu.s
-
-src/cuda/Watershed.o: src/cuda/Watershed.cu.o
-.PHONY : src/cuda/Watershed.o
-
-# target to build an object file
-src/cuda/Watershed.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.o
-.PHONY : src/cuda/Watershed.cu.o
-
-src/cuda/Watershed.i: src/cuda/Watershed.cu.i
-.PHONY : src/cuda/Watershed.i
-
-# target to preprocess a source file
-src/cuda/Watershed.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.i
-.PHONY : src/cuda/Watershed.cu.i
-
-src/cuda/Watershed.s: src/cuda/Watershed.cu.s
-.PHONY : src/cuda/Watershed.s
-
-# target to generate assembly for a file
-src/cuda/Watershed.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/cuda/Watershed.cu.s
-.PHONY : src/cuda/Watershed.cu.s
-
 src/factory/FilterFactory.o: src/factory/FilterFactory.cpp.o
 .PHONY : src/factory/FilterFactory.o
 
@@ -874,30 +538,6 @@ src/processor/CPUProcessor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CPUProcessor.cpp.s
 .PHONY : src/processor/CPUProcessor.cpp.s
 
-src/processor/CUDAProcessor.o: src/processor/CUDAProcessor.cu.o
-.PHONY : src/processor/CUDAProcessor.o
-
-# target to build an object file
-src/processor/CUDAProcessor.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.o
-.PHONY : src/processor/CUDAProcessor.cu.o
-
-src/processor/CUDAProcessor.i: src/processor/CUDAProcessor.cu.i
-.PHONY : src/processor/CUDAProcessor.i
-
-# target to preprocess a source file
-src/processor/CUDAProcessor.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.i
-.PHONY : src/processor/CUDAProcessor.cu.i
-
-src/processor/CUDAProcessor.s: src/processor/CUDAProcessor.cu.s
-.PHONY : src/processor/CUDAProcessor.s
-
-# target to generate assembly for a file
-src/processor/CUDAProcessor.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/processor/CUDAProcessor.cu.s
-.PHONY : src/processor/CUDAProcessor.cu.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -949,48 +589,6 @@ help:
 	@echo "... src/cpu/Watershed.o"
 	@echo "... src/cpu/Watershed.i"
 	@echo "... src/cpu/Watershed.s"
-	@echo "... src/cuda/AdaptiveThreshold.o"
-	@echo "... src/cuda/AdaptiveThreshold.i"
-	@echo "... src/cuda/AdaptiveThreshold.s"
-	@echo "... src/cuda/BilateralFilter.o"
-	@echo "... src/cuda/BilateralFilter.i"
-	@echo "... src/cuda/BilateralFilter.s"
-	@echo "... src/cuda/CLAHE.o"
-	@echo "... src/cuda/CLAHE.i"
-	@echo "... src/cuda/CLAHE.s"
-	@echo "... src/cuda/Canny.o"
-	@echo "... src/cuda/Canny.i"
-	@echo "... src/cuda/Canny.s"
-	@echo "... src/cuda/Dilation.o"
-	@echo "... src/cuda/Dilation.i"
-	@echo "... src/cuda/Dilation.s"
-	@echo "... src/cuda/Erosion.o"
-	@echo "... src/cuda/Erosion.i"
-	@echo "... src/cuda/Erosion.s"
-	@echo "... src/cuda/GaussianBlur.o"
-	@echo "... src/cuda/GaussianBlur.i"
-	@echo "... src/cuda/GaussianBlur.s"
-	@echo "... src/cuda/GrayScale.o"
-	@echo "... src/cuda/GrayScale.i"
-	@echo "... src/cuda/GrayScale.s"
-	@echo "... src/cuda/HarrisCorner.o"
-	@echo "... src/cuda/HarrisCorner.i"
-	@echo "... src/cuda/HarrisCorner.s"
-	@echo "... src/cuda/HistogramEqualization.o"
-	@echo "... src/cuda/HistogramEqualization.i"
-	@echo "... src/cuda/HistogramEqualization.s"
-	@echo "... src/cuda/MedianBlur.o"
-	@echo "... src/cuda/MedianBlur.i"
-	@echo "... src/cuda/MedianBlur.s"
-	@echo "... src/cuda/OtsuThreshold.o"
-	@echo "... src/cuda/OtsuThreshold.i"
-	@echo "... src/cuda/OtsuThreshold.s"
-	@echo "... src/cuda/SIFTDetector.o"
-	@echo "... src/cuda/SIFTDetector.i"
-	@echo "... src/cuda/SIFTDetector.s"
-	@echo "... src/cuda/Watershed.o"
-	@echo "... src/cuda/Watershed.i"
-	@echo "... src/cuda/Watershed.s"
 	@echo "... src/factory/FilterFactory.o"
 	@echo "... src/factory/FilterFactory.i"
 	@echo "... src/factory/FilterFactory.s"
@@ -1000,9 +598,6 @@ help:
 	@echo "... src/processor/CPUProcessor.o"
 	@echo "... src/processor/CPUProcessor.i"
 	@echo "... src/processor/CPUProcessor.s"
-	@echo "... src/processor/CUDAProcessor.o"
-	@echo "... src/processor/CUDAProcessor.i"
-	@echo "... src/processor/CUDAProcessor.s"
 .PHONY : help
 
 
@@ -1014,7 +609,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P "/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/VerifyGlobs.cmake"
+	$(CMAKE_COMMAND) -P /home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

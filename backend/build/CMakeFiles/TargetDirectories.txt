@@ -1,3 +1,3 @@
-/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/server.dir
-/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/edit_cache.dir
-/mnt/d/Sai Satish/Image Processing/project3/backend/build/CMakeFiles/rebuild_cache.dir
+/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/server.dir
+/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/edit_cache.dir
+/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/rebuild_cache.dir

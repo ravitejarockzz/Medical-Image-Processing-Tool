@@ -55,7 +55,7 @@ add_executable(server
 target_include_directories(server PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${OpenCV_INCLUDE_DIRS}
-    ${CMAKE_SOURCE_DIR}/../Crow/include
+    ${CMAKE_SOURCE_DIR}/../crow/include
 )
 
 # -------------------------
