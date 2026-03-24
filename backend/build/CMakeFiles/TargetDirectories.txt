@@ -1,3 +1,0 @@
-/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/server.dir
-/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/edit_cache.dir
-/home/dmacs/Desktop/Medical-Image-Processing-Tool/backend/build/CMakeFiles/rebuild_cache.dir

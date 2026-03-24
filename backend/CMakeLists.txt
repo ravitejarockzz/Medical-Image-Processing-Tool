@@ -62,7 +62,7 @@ target_include_directories(server PRIVATE
 # Link Libraries
 # -------------------------
 
-target_link_libraries(server PRIVATE
+target_link_libraries(server PRIVATE   
     ${OpenCV_LIBS}
 )
 
