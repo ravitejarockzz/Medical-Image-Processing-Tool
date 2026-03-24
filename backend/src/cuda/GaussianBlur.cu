@@ -1,31 +1,3 @@
-// #include "cuda/GaussianBlur.h"
-// #include "factory/FilterFactory.h"
-
-// #include <opencv2/imgproc.hpp>
-// #include <stdexcept>
-
-// cv::Mat GaussianBlurCUDA::apply(
-//     const cv::Mat& input,
-//     const std::unordered_map<std::string, double>& parameters
-// ) {
-//     auto it = parameters.find("kernel");
-//     if (it == parameters.end()) {
-//         throw std::runtime_error("Missing parameter: kernel");
-//     }
-
-//     int kernel = static_cast<int>(it->second);
-
-//     if (kernel < 3 || kernel % 2 == 0) {
-//         throw std::runtime_error("Kernel must be odd and >= 3");
-//     }
-
-//     cv::Mat output;
-//     cv::GaussianBlur(input, output, cv::Size(kernel, kernel), 0);
-
-//     return output;
-// }
-
-// REGISTER_CUDA_FILTER(GaussianBlurCUDA, "gaussian_blur")
 
 #include "cuda/GaussianBlur.h"
 #include "factory/FilterFactory.h"
@@ -39,6 +11,7 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
+#include <fstream>
 
 // ==========================================================
 // 1. CUDA DEVICE KERNEL
@@ -133,10 +106,35 @@ cv::Mat GaussianBlurCUDA::apply(
     // --- Launch Kernel ---
     dim3 block(16, 16);
     dim3 grid((input.cols + block.x - 1) / block.x, (input.rows + block.y - 1) / block.y);
+
+    // 1. Create CUDA Events
+        cudaEvent_t start, stop;
+        cudaEventCreate(&start);
+        cudaEventCreate(&stop);
+
+    // 2. Start the hardware timer
+        cudaEventRecord(start);
+
+    // 3. Launch the kernel
     gaussianBlurKernel<<<grid, block>>>(d_input, d_output, input.cols, input.rows, input.step, d_kernel, ksize);
     
-    // Synchronize to catch any execution errors
-    cudaDeviceSynchronize();
+    // 4. Stop the hardware timer
+        cudaEventRecord(stop);
+        cudaEventSynchronize(stop);
+
+    // 6. Calculate and print the elapsed time
+        float milliseconds = 0;
+        cudaEventElapsedTime(&milliseconds, start, stop);
+// --- Write to File instead of Terminal ---
+    // std::ofstream logfile("benchmark_results.txt", std::ios_base::app);
+    // if (logfile.is_open()) {
+    //     logfile << "CUDA, " << input.cols << ", " << input.rows << ", " << milliseconds << "\n";
+    // }
+    // logfile.close();
+
+        // 7. Destroy the events to prevent memory leaks
+        cudaEventDestroy(start);
+        cudaEventDestroy(stop);
 
     // --- Copy Data Back to Host ---
     cudaMemcpy(output.ptr(), d_output, memory_size, cudaMemcpyDeviceToHost);

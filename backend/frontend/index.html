@@ -166,6 +166,24 @@
                 <span id="dilationIterationsVal">1</span>
             </div>
 
+            <div id="fastDetectorControls" class="controlBox" style="display: none;">
+                Corner Threshold
+                <input type="range" id="fastThreshold" min="1" max="100" step="1" value="40">
+                <span id="fastThresholdVal">40</span>
+            </div>
+
+            <div id="kmeansControls" class="controlBox" style="display: none;">
+                Number of Clusters (K)
+                <input type="range" id="kmeansK" min="2" max="10" step="1" value="3">
+                <span id="kmeansKVal">3</span><br>
+                
+                Iterations
+                <input type="range" id="kmeansIter" min="1" max="20" step="1" value="10">
+                <span id="kmeansIterVal">10</span>
+            </div>
+
+
+
         </div>
 
         <div class="buttons">

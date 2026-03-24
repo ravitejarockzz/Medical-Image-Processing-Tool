@@ -111,6 +111,13 @@ erosionIterations.oninput = () => erosionIterationsVal.innerText = erosionIterat
 dilationKSize.oninput = () => dilationKSizeVal.innerText = dilationKSize.value;
 dilationIterations.oninput = () => dilationIterationsVal.innerText = dilationIterations.value;
 
+// Fast Detector slider
+fastThreshold.oninput = () => fastThresholdVal.innerText = fastThreshold.value;
+
+// K-Means sliders
+kmeansK.oninput = () => kmeansKVal.innerText = kmeansK.value;
+kmeansIterations.oninput = () => kmeansIterationsVal.innerText = kmeansIterations.value;
+
 // ----------------------
 // Preview on select (NEW)
 // ----------------------
@@ -181,6 +188,12 @@ function toggleControls() {
 
     dilationControls.style.display =
         operation.value === "dilation" ? "block" : "none";
+
+    fastDetectorControls.style.display =
+        operation.value === "fast_detector" ? "block" : "none";
+    
+    kmeansControls.style.display =
+        operation.value === "kmeans_segmentation" ? "block" : "none";
         
     clearProcessed();   // ✅ reset processed when operation changes
 }
@@ -262,6 +275,15 @@ function processImage() {
     if (lastOperation === "dilation") { 
         config.parameters.kernel_size = parseInt(dilationKSize.value);
         config.parameters.iterations = parseInt(dilationIterations.value);
+    }
+
+    if (lastOperation === "fast_detector") {
+        config.parameters.threshold = parseInt(fastThreshold.value);
+    }
+
+    if (lastOperation === "kmeans_segmentation") {
+        config.parameters.k = parseInt(kmeansK.value);
+        config.parameters.iterations = parseInt(kmeansIter.value);
     }
 
     const form = new FormData();

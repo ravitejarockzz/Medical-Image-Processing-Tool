@@ -2,9 +2,9 @@
 
 #include "core/IFilter.h"
 
-class CLAHECUDA : public IFilter {
+class KMeansSegmentationCUDA: public IFilter {
 public:
-    CLAHECUDA() = default;
+    KMeansSegmentationCUDA() = default;
 
     cv::Mat apply(
         const cv::Mat& input,
@@ -12,8 +12,8 @@ public:
     ) override;
 
     std::string name() const override {
-        return "clahe";
+        return "KMeansSegmentationCUDA";
     }
 
-    ~CLAHECUDA() override = default;
-};  
+    ~KMeansSegmentationCUDA() override = default;
+};

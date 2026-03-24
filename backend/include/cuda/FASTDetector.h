@@ -2,9 +2,9 @@
 
 #include "core/IFilter.h"
 
-class WatershedCUDA : public IFilter {
+class FASTDetectorCUDA : public IFilter {
 public:
-    WatershedCUDA() = default;
+    FASTDetectorCUDA() = default;
 
     cv::Mat apply(
         const cv::Mat& input,
@@ -12,8 +12,8 @@ public:
     ) override;
 
     std::string name() const override {
-        return "watershed";
+        return "FAST";
     }
 
-    ~WatershedCUDA() override = default;
+    ~FASTDetectorCUDA() override = default;
 };
