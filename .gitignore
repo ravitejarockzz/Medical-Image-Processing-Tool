@@ -1,0 +1,4 @@
+backend/build/
+CMakeFiles/
+*.o
+*.out
